@@ -1,0 +1,839 @@
+{
+  "pho_ga": {
+    "description": {
+      "ru": "Классический вьетнамский суп: прозрачный ароматный бульон, рисовая лапша и нежная курица. Подаётся с зеленью и лаймом.",
+      "ua": "Класичний в’єтнамський суп: прозорий ароматний бульйон, рисова локшина та ніжна курка. Подається із зеленню та лаймом.",
+      "en": "Classic Vietnamese soup: clear aromatic broth, rice noodles and tender chicken. Served with herbs and lime.",
+      "vn": "Phở gà: nước dùng trong, thơm, với bánh phở và thịt gà mềm. Ăn kèm rau thơm và chanh.",
+      "pl": "Klasyczna zupa wietnamska: klarowny aromatyczny bulion, makaron ryżowy i delikatny kurczak. Podawana z ziołami i limonką.",
+      "de": "Klassische vietnamesische Suppe: klare, aromatische Brühe, Reisnudeln und zartes Huhn. Mit Kräutern und Limette serviert.",
+      "zh": "越南经典汤粉：清香高汤、河粉与嫩鸡肉，配香草与青柠。"
+    }
+  },
+  "pho_bo": {
+    "description": {
+      "ru": "Насыщенный говяжий бульон, рисовая лапша и тонкие ломтики говядины. Самый популярный вариант Фо.",
+      "ua": "Насичений яловичий бульйон, рисова локшина та тонкі скибочки яловичини. Найпопулярніший варіант Фо.",
+      "en": "Rich beef broth with rice noodles and thin slices of beef — the most popular Pho.",
+      "vn": "Phở bò: nước dùng bò đậm đà, bánh phở và thịt bò thái mỏng. Món phở phổ biến nhất.",
+      "pl": "Bogaty bulion wołowy, makaron ryżowy i cienkie plastry wołowiny — najpopularniejsze Pho.",
+      "de": "Kräftige Rinderbrühe mit Reisnudeln und dünnen Rindfleischscheiben — die beliebteste Pho-Variante.",
+      "zh": "浓郁牛骨高汤配河粉与薄切牛肉，是最受欢迎的河粉汤。"
+    }
+  },
+  "pho_heo": {
+    "description": {
+      "ru": "Лёгкий бульон, рисовая лапша и свинина. Хороший выбор, если хочется мягкого вкуса без остроты.",
+      "ua": "Легкий бульйон, рисова локшина та свинина. Гарний вибір для м’якого смаку без гостроти.",
+      "en": "Light broth with rice noodles and pork. A mild, non-spicy option.",
+      "vn": "Phở heo: nước dùng nhẹ, bánh phở và thịt heo. Vị dịu, dễ ăn.",
+      "pl": "Lekki bulion, makaron ryżowy i wieprzowina. Łagodna opcja bez ostrości.",
+      "de": "Leichte Brühe mit Reisnudeln und Schweinefleisch. Mild und nicht scharf.",
+      "zh": "清爽高汤配河粉与猪肉，口味温和不辣。"
+    }
+  },
+  "pho_tom": {
+    "description": {
+      "ru": "Ароматный бульон, рисовая лапша и креветки. Лёгкий морской вариант Фо.",
+      "ua": "Ароматний бульйон, рисова локшина та креветки. Легкий «морський» варіант Фо.",
+      "en": "Aromatic broth with rice noodles and shrimp — a light seafood Pho.",
+      "vn": "Phở tôm: nước dùng thơm, bánh phở và tôm. Phiên bản hải sản nhẹ nhàng.",
+      "pl": "Aromatyczny bulion, makaron ryżowy i krewetki — lekka wersja Pho z owocami morza.",
+      "de": "Aromatische Brühe mit Reisnudeln und Garnelen — leichte Seafood-Pho.",
+      "zh": "清香高汤配河粉与鲜虾，海鲜版河粉汤。"
+    }
+  },
+  "pho_tofu": {
+    "description": {
+      "ru": "Овощной бульон, рисовая лапша и тофу. Лёгкий вариант без мяса.",
+      "ua": "Овочевий бульйон, рисова локшина та тофу. Легкий варіант без м’яса.",
+      "en": "Vegetable broth with rice noodles and tofu — a light meatless option.",
+      "vn": "Phở đậu hũ: nước dùng rau củ, bánh phở và đậu hũ. Nhẹ, không thịt.",
+      "pl": "Bulion warzywny, makaron ryżowy i tofu — lekka opcja bez mięsa.",
+      "de": "Gemüsebrühe mit Reisnudeln und Tofu — leicht und fleischlos.",
+      "zh": "蔬菜高汤配河粉与豆腐，清爽无肉。"
+    }
+  },
+  "pho_rau": {
+    "description": {
+      "ru": "Овощной бульон, рисовая лапша и много овощей. Веганский вариант.",
+      "ua": "Овочевий бульйон, рисова локшина та багато овочів. Веганський варіант.",
+      "en": "Vegetable broth, rice noodles and lots of veggies — vegan option.",
+      "vn": "Phở rau: nước dùng rau củ, bánh phở và nhiều rau. Phiên bản thuần chay.",
+      "pl": "Bulion warzywny, makaron ryżowy i dużo warzyw — wersja wegańska.",
+      "de": "Gemüsebrühe, Reisnudeln und viel Gemüse — vegane Variante.",
+      "zh": "蔬菜高汤配河粉与多种蔬菜，纯素选择。"
+    }
+  },
+  "pho_mix": {
+    "description": {
+      "ru": "Pho MIX — это суп Фо с двумя видами начинки в одной порции (например: курица + говядина).",
+      "ua": "Pho MIX — це суп Фо з двома видами начинки в одній порції (наприклад: курка + яловичина).",
+      "en": "Pho MIX means two protein toppings in one bowl (e.g., chicken + beef).",
+      "vn": "Phở mix: 1 tô có 2 loại nhân (ví dụ: gà + bò).",
+      "pl": "Pho MIX: dwie różne dodatki białkowe w jednej porcji (np. kurczak + wołowina).",
+      "de": "Pho MIX: zwei verschiedene Einlagen in einer Portion (z. B. Huhn + Rind).",
+      "zh": "Pho MIX：一碗里两种配料（例如鸡肉+牛肉）。"
+    }
+  },
+
+  "bun_ga": {
+    "description": {
+      "ru": "Суп с рисовой вермишелью (bún) и курицей. Лёгкий бульон, зелень и лайм.",
+      "ua": "Суп з рисовою вермішеллю (bún) та куркою. Легкий бульйон, зелень і лайм.",
+      "en": "Light broth soup with bun rice vermicelli and chicken. Served with herbs and lime.",
+      "vn": "Bún gà: nước dùng nhẹ, bún và thịt gà. Ăn kèm rau thơm và chanh.",
+      "pl": "Lekka zupa z ryżowym vermicelli (bun) i kurczakiem. Zioła i limonka.",
+      "de": "Leichte Suppe mit Reisvermicelli (Bun) und Huhn. Mit Kräutern und Limette.",
+      "zh": "清汤配米粉（细米线）与鸡肉，配香草和青柠。"
+    }
+  },
+  "bun_bo": {
+    "description": {
+      "ru": "Суп с рисовой вермишелью (bún) и говядиной. Мягкий вкус и аромат специй.",
+      "ua": "Суп з рисовою вермішеллю (bún) та яловичиною. М’який смак і аромат спецій.",
+      "en": "Bun rice vermicelli soup with beef — aromatic and filling.",
+      "vn": "Bún bò: bún với thịt bò, nước dùng thơm, dễ ăn.",
+      "pl": "Zupa z bun (vermicelli ryżowe) i wołowiną — aromatyczna i sycąca.",
+      "de": "Bun-Suppe mit Rind — aromatisch und sättigend.",
+      "zh": "米粉汤配牛肉，香气十足且饱腹。"
+    }
+  },
+  "bun_heo": {
+    "description": {
+      "ru": "Суп с рисовой вермишелью (bún) и свининой. Лёгкий, неострый.",
+      "ua": "Суп з рисовою вермішеллю (bún) та свининою. Легкий, негострий.",
+      "en": "Bun rice vermicelli soup with pork — light and mild.",
+      "vn": "Bún heo: nước dùng nhẹ, bún và thịt heo. Vị dịu.",
+      "pl": "Zupa bun z wieprzowiną — lekka i łagodna.",
+      "de": "Bun-Suppe mit Schwein — leicht und mild.",
+      "zh": "细米粉汤配猪肉，清淡不辣。"
+    }
+  },
+  "bun_tom": {
+    "description": {
+      "ru": "Суп с рисовой вермишелью (bún) и креветками. Лёгкий морской вкус.",
+      "ua": "Суп з рисовою вермішеллю (bún) та креветками. Легкий морський смак.",
+      "en": "Bun rice vermicelli soup with shrimp — light seafood taste.",
+      "vn": "Bún tôm: bún với tôm, nước dùng thơm nhẹ.",
+      "pl": "Zupa bun z krewetkami — lekki morski smak.",
+      "de": "Bun-Suppe mit Garnelen — leichter Meeresgeschmack.",
+      "zh": "细米粉汤配鲜虾，清爽海鲜风味。"
+    }
+  },
+  "bun_rau": {
+    "description": {
+      "ru": "Овощной суп с рисовой вермишелью (bún). Веганский вариант, много зелени.",
+      "ua": "Овочевий суп з рисовою вермішеллю (bún). Веганський варіант, багато зелені.",
+      "en": "Vegetable bun vermicelli soup — vegan option with herbs.",
+      "vn": "Bún rau: nước dùng rau củ, bún và nhiều rau thơm (thuần chay).",
+      "pl": "Warzywna zupa bun — wegańska, z dużą ilością ziół.",
+      "de": "Gemüse-Bun-Suppe — vegan, mit vielen Kräutern.",
+      "zh": "蔬菜米粉汤，纯素选择，香草丰富。"
+    }
+  },
+  "bun_tofu": {
+    "description": {
+      "ru": "Суп с рисовой вермишелью (bún) и тофу. Лёгкий вариант без мяса.",
+      "ua": "Суп з рисовою вермішеллю (bún) та тофу. Легкий варіант без м’яса.",
+      "en": "Bun vermicelli soup with tofu — light meatless option.",
+      "vn": "Bún đậu hũ: bún với đậu hũ, nước dùng nhẹ, không thịt.",
+      "pl": "Zupa bun z tofu — lekka opcja bez mięsa.",
+      "de": "Bun-Suppe mit Tofu — leichte, fleischlose Option.",
+      "zh": "米粉汤配豆腐，清爽无肉。"
+    }
+  },
+  "bun_mix": {
+    "description": {
+      "ru": "Bun MIX — это суп Бун с двумя видами начинки в одной порции (например: свинина + креветки).",
+      "ua": "Bun MIX — це суп Бун з двома видами начинки в одній порції (наприклад: свинина + креветки).",
+      "en": "Bun MIX means two toppings in one bowl (e.g., pork + shrimp).",
+      "vn": "Bún mix: 1 tô có 2 loại nhân (ví dụ: heo + tôm).",
+      "pl": "Bun MIX: dwa dodatki w jednej porcji (np. wieprzowina + krewetki).",
+      "de": "Bun MIX: zwei Einlagen in einer Portion (z. B. Schwein + Garnelen).",
+      "zh": "Bun MIX：一碗里两种配料（例如猪肉+虾）。"
+    }
+  },
+
+  "bun_nam_bo_ga": {
+    "description": {
+      "ru": "Холодная рисовая лапша (салат-лапша) с овощами, соусом и курицей. Подаётся без бульона.",
+      "ua": "Холодна рисова локшина (салат-локшина) з овочами, соусом і куркою. Без бульйону.",
+      "en": "Cold rice vermicelli “noodle salad” with vegetables, sauce and chicken. No broth.",
+      "vn": "Bún Nam Bộ gà: bún trộn rau, nước sốt và thịt gà. Không có nước dùng.",
+      "pl": "Bun na zimno (sałatka z makaronem) z warzywami, sosem i kurczakiem. Bez bulionu.",
+      "de": "Kalter Bun (Nudelsalat) mit Gemüse, Sauce und Huhn. Ohne Brühe.",
+      "zh": "冷拌米粉沙拉：蔬菜、酱汁与鸡肉，不含汤。"
+    }
+  },
+  "bun_nam_bo_bo": {
+    "description": {
+      "ru": "Холодная рисовая лапша с овощами, соусом и говядиной. Лёгко, ярко, сытно.",
+      "ua": "Холодна рисова локшина з овочами, соусом і яловичиною. Легко, яскраво, ситно.",
+      "en": "Cold rice vermicelli noodle salad with vegetables, sauce and beef.",
+      "vn": "Bún Nam Bộ bò: bún trộn rau, nước sốt và thịt bò. Ăn mát, đậm vị.",
+      "pl": "Sałatka z bun na zimno z warzywami, sosem i wołowiną.",
+      "de": "Kalter Reisnudelsalat (Bun) mit Gemüse, Sauce und Rind.",
+      "zh": "冷拌米粉沙拉配牛肉、蔬菜与酱汁。"
+    }
+  },
+  "bun_nam_bo_tom": {
+    "description": {
+      "ru": "Холодная рисовая лапша с овощами, соусом и креветками. Освежающий вариант.",
+      "ua": "Холодна рисова локшина з овочами, соусом і креветками. Освіжаючий варіант.",
+      "en": "Cold rice vermicelli noodle salad with vegetables, sauce and shrimp.",
+      "vn": "Bún Nam Bộ tôm: bún trộn với rau, nước sốt và tôm. Mát, dễ ăn.",
+      "pl": "Bun na zimno z warzywami, sosem i krewetkami — odświeżające.",
+      "de": "Kalter Bun-Nudelsalat mit Gemüse, Sauce und Garnelen — erfrischend.",
+      "zh": "冷拌米粉沙拉配虾，清爽开胃。"
+    }
+  },
+  "bun_nam_bo_heo": {
+    "description": {
+      "ru": "Холодная рисовая лапша с овощами, соусом и свининой. Без бульона.",
+      "ua": "Холодна рисова локшина з овочами, соусом і свининою. Без бульйону.",
+      "en": "Cold rice vermicelli noodle salad with vegetables, sauce and pork.",
+      "vn": "Bún Nam Bộ heo: bún trộn rau, nước sốt và thịt heo. Không có nước dùng.",
+      "pl": "Bun na zimno z warzywami, sosem i wieprzowiną. Bez bulionu.",
+      "de": "Kalter Bun-Nudelsalat mit Gemüse, Sauce und Schwein. Ohne Brühe.",
+      "zh": "冷拌米粉沙拉配猪肉与蔬菜，不含汤。"
+    }
+  },
+  "bun_nam_bo_tofu": {
+    "description": {
+      "ru": "Холодная рисовая лапша с овощами, соусом и тофу. Лёгкий вариант без мяса.",
+      "ua": "Холодна рисова локшина з овочами, соусом і тофу. Легкий варіант без м’яса.",
+      "en": "Cold rice vermicelli noodle salad with vegetables, sauce and tofu.",
+      "vn": "Bún Nam Bộ đậu hũ: bún trộn rau, nước sốt và đậu hũ. Nhẹ, không thịt.",
+      "pl": "Bun na zimno z warzywami, sosem i tofu — lekka opcja.",
+      "de": "Kalter Bun-Nudelsalat mit Gemüse, Sauce und Tofu — leicht.",
+      "zh": "冷拌米粉沙拉配豆腐，清爽无肉。"
+    }
+  },
+  "bun_nam_bo_nem": {
+    "description": {
+      "ru": "Холодная рисовая лапша с овощами и соусом + хрустящий нем (спринг-ролл).",
+      "ua": "Холодна рисова локшина з овочами та соусом + хрусткий нем (спрінг-рол).",
+      "en": "Cold bun noodle salad with vegetables and sauce + crispy nem (spring roll).",
+      "vn": "Bún Nam Bộ nem: bún trộn rau, nước sốt + nem rán giòn.",
+      "pl": "Bun na zimno z warzywami i sosem + chrupiące nem (spring roll).",
+      "de": "Kalter Bun-Nudelsalat mit Gemüse und Sauce + knuspriges Nem (Frühlingsrolle).",
+      "zh": "冷拌米粉沙拉配蔬菜与酱汁 + 香脆春卷。"
+    }
+  },
+
+  "bun_cha_ca": {
+    "description": {
+      "ru": "Суп с рисовой вермишелью и рыбными котлетками/фрикадельками. Мягкий морской вкус.",
+      "ua": "Суп з рисовою вермішеллю та рибними котлетками/фрикадельками. М’який морський смак.",
+      "en": "Rice vermicelli soup with fish cakes/balls — mild seafood flavor.",
+      "vn": "Bún chả cá: bún với chả cá, nước dùng thơm nhẹ, vị hải sản.",
+      "pl": "Zupa bun z kotlecikami/klopsikami rybnymi — łagodny morski smak.",
+      "de": "Bun-Suppe mit Fischbällchen/Fischfrikadellen — milder Meeresgeschmack.",
+      "zh": "米粉汤配鱼丸/鱼饼，口味清淡鲜香。"
+    }
+  },
+  "bun_bo_hue": {
+    "description": {
+      "ru": "Острый вьетнамский суп из города Хюэ: насыщенный бульон и рисовая лапша. Для тех, кто любит поострее. 🌶🌶",
+      "ua": "Гострий в’єтнамський суп з міста Хює: насичений бульйон і рисова локшина. Для тих, хто любить гостре. 🌶🌶",
+      "en": "Spicy Vietnamese soup from Hue: rich broth and rice noodles. For spicy lovers. 🌶🌶",
+      "vn": "Bún bò Huế: nước dùng đậm, thơm, có độ cay. Dành cho ai thích cay. 🌶🌶",
+      "pl": "Ostra zupa z Hue: bogaty bulion i makaron ryżowy. Dla fanów ostrego. 🌶🌶",
+      "de": "Scharfe Suppe aus Hue: kräftige Brühe und Reisnudeln. Für Schärfe-Fans. 🌶🌶",
+      "zh": "顺化辣汤粉：浓郁高汤与米粉，适合爱辣的人。🌶🌶"
+    }
+  },
+
+  "mien_ga": {
+    "description": {
+      "ru": "Суп со стеклянной лапшой (миен) и курицей. Лёгкий бульон и нежный вкус.",
+      "ua": "Суп зі скляною локшиною (мієн) та куркою. Легкий бульйон і ніжний смак.",
+      "en": "Soup with glass noodles (mien) and chicken — light and comforting.",
+      "vn": "Miến gà: miến (bún tàu) với thịt gà, nước dùng nhẹ, dễ ăn.",
+      "pl": "Zupa z makaronem szklanym (mien) i kurczakiem — lekka i delikatna.",
+      "de": "Suppe mit Glasnudeln (Mien) und Huhn — leicht und wohltuend.",
+      "zh": "粉丝汤配鸡肉，清淡温和。"
+    }
+  },
+  "mien_bo": {
+    "description": {
+      "ru": "Суп со стеклянной лапшой и говядиной. Нежная текстура лапши и насыщенный вкус.",
+      "ua": "Суп зі скляною локшиною та яловичиною. Ніжна текстура та насичений смак.",
+      "en": "Glass noodle soup with beef — tender noodles and rich flavor.",
+      "vn": "Miến bò: miến với thịt bò, nước dùng thơm, vị đậm hơn.",
+      "pl": "Zupa z makaronem szklanym i wołowiną — delikatny makaron i bogatszy smak.",
+      "de": "Glasnudelsuppe mit Rind — zarte Nudeln, kräftiger Geschmack.",
+      "zh": "牛肉粉丝汤：粉丝口感爽滑，味道更浓。"
+    }
+  },
+  "mien_tofu": {
+    "description": {
+      "ru": "Суп со стеклянной лапшой и тофу. Лёгкий вариант без мяса.",
+      "ua": "Суп зі скляною локшиною та тофу. Легкий варіант без м’яса.",
+      "en": "Glass noodle soup with tofu — a light meatless option.",
+      "vn": "Miến đậu hũ: miến với đậu hũ, nước dùng rau củ, không thịt.",
+      "pl": "Zupa z makaronem szklanym i tofu — lekka opcja bez mięsa.",
+      "de": "Glasnudelsuppe mit Tofu — leicht und fleischlos.",
+      "zh": "豆腐粉丝汤：清爽无肉选择。"
+    }
+  },
+  "mien_tom": {
+    "description": {
+      "ru": "Суп со стеклянной лапшой и креветками. Лёгкий морской вариант.",
+      "ua": "Суп зі скляною локшиною та креветками. Легкий морський варіант.",
+      "en": "Glass noodle soup with shrimp — light seafood version.",
+      "vn": "Miến tôm: miến với tôm, nước dùng thơm nhẹ, vị hải sản.",
+      "pl": "Zupa z makaronem szklanym i krewetkami — lekka wersja z owocami morza.",
+      "de": "Glasnudelsuppe mit Garnelen — leichte Seafood-Version.",
+      "zh": "虾粉丝汤：清香海鲜风味。"
+    }
+  },
+  "mien_heo": {
+    "description": {
+      "ru": "Суп со стеклянной лапшой и свининой. Мягкий вкус, много зелени.",
+      "ua": "Суп зі скляною локшиною та свининою. М’який смак, багато зелені.",
+      "en": "Glass noodle soup with pork — mild flavor with herbs.",
+      "vn": "Miến heo: miến với thịt heo, vị dịu, ăn kèm rau thơm.",
+      "pl": "Zupa z makaronem szklanym i wieprzowiną — łagodna, z ziołami.",
+      "de": "Glasnudelsuppe mit Schwein — mild, mit Kräutern.",
+      "zh": "猪肉粉丝汤：口味温和，配香草。"
+    }
+  },
+  "mien_rau": {
+    "description": {
+      "ru": "Суп со стеклянной лапшой и овощами. Веганский вариант.",
+      "ua": "Суп зі скляною локшиною та овочами. Веганський варіант.",
+      "en": "Glass noodle soup with vegetables — vegan option.",
+      "vn": "Miến rau: miến với rau củ, thuần chay, nhẹ và thơm.",
+      "pl": "Zupa z makaronem szklanym i warzywami — wersja wegańska.",
+      "de": "Glasnudelsuppe mit Gemüse — vegane Option.",
+      "zh": "蔬菜粉丝汤：纯素选择，清淡可口。"
+    }
+  },
+  "mien_mix": {
+    "description": {
+      "ru": "Miến MIX — это суп со стеклянной лапшой и двумя видами начинки (например: курица + креветки).",
+      "ua": "Miến MIX — це суп зі скляною локшиною та двома видами начинки (наприклад: курка + креветки).",
+      "en": "Mien MIX means glass noodle soup with two toppings (e.g., chicken + shrimp).",
+      "vn": "Miến mix: miến với 2 loại nhân (ví dụ: gà + tôm).",
+      "pl": "Mien MIX: zupa z makaronem szklanym i dwoma dodatkami (np. kurczak + krewetki).",
+      "de": "Mien MIX: Glasnudelsuppe mit zwei Einlagen (z. B. Huhn + Garnelen).",
+      "zh": "粉丝汤 MIX：一碗里两种配料（例如鸡肉+虾）。"
+    }
+  },
+
+  "mi_tau_ga": {
+    "description": {
+      "ru": "Суп на яичной лапше (mì) с курицей. Более плотная лапша и насыщенный вкус.",
+      "ua": "Суп на яєчній локшині (mì) з куркою. Щільніша локшина та насичений смак.",
+      "en": "Egg noodle soup with chicken — heartier noodles and richer taste.",
+      "vn": "Mì Tàu gà: mì trứng với thịt gà, nước dùng thơm, dễ ăn.",
+      "pl": "Zupa na makaronie jajecznym z kurczakiem — bardziej sycąca.",
+      "de": "Eiernudelsuppe mit Huhn — sättigender, intensiver Geschmack.",
+      "zh": "鸡肉蛋面汤：面更筋道，口味更饱满。"
+    }
+  },
+  "mi_tau_bo": {
+    "description": {
+      "ru": "Суп на яичной лапше (mì) с говядиной. Сытный вариант для хорошего аппетита.",
+      "ua": "Суп на яєчній локшині (mì) з яловичиною. Ситний варіант для гарного апетиту.",
+      "en": "Egg noodle soup with beef — a filling, hearty choice.",
+      "vn": "Mì Tàu bò: mì trứng với thịt bò, nước dùng đậm đà, no lâu.",
+      "pl": "Zupa na makaronie jajecznym z wołowiną — sycąca i treściwa.",
+      "de": "Eiernudelsuppe mit Rind — kräftig und sehr sättigend.",
+      "zh": "牛肉蛋面汤：更饱腹的选择。"
+    }
+  },
+  "mi_tau_heo": {
+    "description": {
+      "ru": "Суп на яичной лапше (mì) со свининой. Мягкий вкус, зелень и бульон.",
+      "ua": "Суп на яєчній локшині (mì) зі свининою. М’який смак, зелень та бульйон.",
+      "en": "Egg noodle soup with pork — mild and comforting.",
+      "vn": "Mì Tàu heo: mì trứng với thịt heo, vị dịu, dễ ăn.",
+      "pl": "Zupa na makaronie jajecznym z wieprzowiną — łagodna i sycąca.",
+      "de": "Eiernudelsuppe mit Schwein — mild und wohltuend.",
+      "zh": "猪肉蛋面汤：口味温和。"
+    }
+  },
+  "mi_tau_tom": {
+    "description": {
+      "ru": "Суп на яичной лапше (mì) с креветками. Морской вариант с плотной лапшой.",
+      "ua": "Суп на яєчній локшині (mì) з креветками. Морський варіант із щільною локшиною.",
+      "en": "Egg noodle soup with shrimp — hearty noodles with seafood.",
+      "vn": "Mì Tàu tôm: mì trứng với tôm, nước dùng thơm, vị hải sản.",
+      "pl": "Zupa na makaronie jajecznym z krewetkami — sycąca wersja z owocami morza.",
+      "de": "Eiernudelsuppe mit Garnelen — sättigende Seafood-Variante.",
+      "zh": "虾蛋面汤：海鲜风味 + 筋道面条。"
+    }
+  },
+  "mi_tau_rau": {
+    "description": {
+      "ru": "Суп с лапшой и овощами. Лёгкий вариант без мяса.",
+      "ua": "Суп з локшиною та овочами. Легкий варіант без м’яса.",
+      "en": "Noodle soup with vegetables — light meatless option.",
+      "vn": "Mì Tàu rau: mì với rau củ, nhẹ, không thịt.",
+      "pl": "Zupa z makaronem i warzywami — lekka opcja bez mięsa.",
+      "de": "Nudelsuppe mit Gemüse — leicht und fleischlos.",
+      "zh": "蔬菜面汤：清淡无肉。"
+    }
+  },
+  "mi_tau_tofu": {
+    "description": {
+      "ru": "Суп с лапшой и тофу. Нежно, легко, без мяса.",
+      "ua": "Суп з локшиною та тофу. Ніжно, легко, без м’яса.",
+      "en": "Noodle soup with tofu — gentle, light, meatless.",
+      "vn": "Mì Tàu đậu hũ: mì với đậu hũ, vị nhẹ, không thịt.",
+      "pl": "Zupa z makaronem i tofu — delikatna, bez mięsa.",
+      "de": "Nudelsuppe mit Tofu — mild, leicht, ohne Fleisch.",
+      "zh": "豆腐面汤：清爽无肉选择。"
+    }
+  },
+  "mi_tau_mix": {
+    "description": {
+      "ru": "Mì MIX — это суп с лапшой и двумя видами начинки (например: говядина + свинина).",
+      "ua": "Mì MIX — це суп з локшиною та двома видами начинки (наприклад: яловичина + свинина).",
+      "en": "Mi MIX means noodle soup with two toppings (e.g., beef + pork).",
+      "vn": "Mì mix: mì với 2 loại nhân (ví dụ: bò + heo).",
+      "pl": "Mi MIX: zupa z makaronem i dwoma dodatkami (np. wołowina + wieprzowina).",
+      "de": "Mi MIX: Nudelsuppe mit zwei Einlagen (z. B. Rind + Schwein).",
+      "zh": "面汤 MIX：一碗里两种配料（例如牛肉+猪肉）。"
+    }
+  },
+
+  "pho_xao_ga": {
+    "description": {
+      "ru": "Жареная рисовая лапша Фо с курицей и овощами. Готовится быстро в воке, вкус насыщенный, подача без бульона.",
+      "ua": "Смажена рисова локшина Фо з куркою та овочами. Швидко готується у вок, без бульйону.",
+      "en": "WOK-fried pho rice noodles with chicken and vegetables. No broth.",
+      "vn": "Phở xào gà: bánh phở xào nhanh với rau và thịt gà. Không có nước dùng.",
+      "pl": "Smażone w woku pho (makaron ryżowy) z kurczakiem i warzywami. Bez bulionu.",
+      "de": "Im Wok gebratene Pho-Reisnudeln mit Huhn und Gemüse. Ohne Brühe.",
+      "zh": "鸡肉炒河粉：河粉与蔬菜快炒，不含汤。"
+    }
+  },
+  "pho_xao_bo": {
+    "description": {
+      "ru": "Жареная лапша Фо с говядиной и овощами. Сытный вок, идеально на ужин.",
+      "ua": "Смажена локшина Фо з яловичиною та овочами. Ситний вок, ідеально на вечерю.",
+      "en": "WOK-fried pho rice noodles with beef and vegetables — filling and tasty.",
+      "vn": "Phở xào bò: bánh phở xào với thịt bò và rau. No lâu.",
+      "pl": "Pho smażone z wołowiną i warzywami — sycące.",
+      "de": "Gebratene Pho mit Rind und Gemüse — sehr sättigend.",
+      "zh": "牛肉炒河粉：饱腹又香。"
+    }
+  },
+  "pho_xao_heo": {
+    "description": {
+      "ru": "Жареная лапша Фо со свининой и овощами. Мягкий вкус, без бульона.",
+      "ua": "Смажена локшина Фо зі свининою та овочами. М’який смак, без бульйону.",
+      "en": "WOK-fried pho rice noodles with pork and vegetables. No broth.",
+      "vn": "Phở xào heo: bánh phở xào với thịt heo và rau, không nước dùng.",
+      "pl": "Pho smażone z wieprzowiną i warzywami. Bez bulionu.",
+      "de": "Gebratene Pho mit Schwein und Gemüse. Ohne Brühe.",
+      "zh": "猪肉炒河粉：河粉与蔬菜快炒。"
+    }
+  },
+  "pho_xao_tom": {
+    "description": {
+      "ru": "Жареная лапша Фо с креветками и овощами. Морской вок, яркий вкус.",
+      "ua": "Смажена локшина Фо з креветками та овочами. Морський вок, яскравий смак.",
+      "en": "WOK-fried pho rice noodles with shrimp and vegetables — seafood vibe.",
+      "vn": "Phở xào tôm: bánh phở xào tôm và rau, vị hải sản.",
+      "pl": "Pho smażone z krewetkami i warzywami — morski smak.",
+      "de": "Gebratene Pho mit Garnelen und Gemüse — Seafood-Geschmack.",
+      "zh": "虾炒河粉：海鲜风味更突出。"
+    }
+  },
+  "pho_xao_tofu": {
+    "description": {
+      "ru": "Жареная лапша Фо с тофу и овощами. Лёгкий вариант без мяса.",
+      "ua": "Смажена локшина Фо з тофу та овочами. Легкий варіант без м’яса.",
+      "en": "WOK-fried pho rice noodles with tofu and vegetables — meatless option.",
+      "vn": "Phở xào đậu hũ: bánh phở xào với đậu hũ và rau, không thịt.",
+      "pl": "Pho smażone z tofu i warzywami — bez mięsa.",
+      "de": "Gebratene Pho mit Tofu und Gemüse — ohne Fleisch.",
+      "zh": "豆腐炒河粉：清爽无肉。"
+    }
+  },
+  "pho_xao_rau": {
+    "description": {
+      "ru": "Жареная лапша Фо с овощами. Веганский вок без мяса.",
+      "ua": "Смажена локшина Фо з овочами. Веганський вок без м’яса.",
+      "en": "WOK-fried pho rice noodles with vegetables — vegan.",
+      "vn": "Phở xào rau: bánh phở xào rau củ, thuần chay.",
+      "pl": "Pho smażone z warzywami — wersja wegańska.",
+      "de": "Gebratene Pho mit Gemüse — vegan.",
+      "zh": "蔬菜炒河粉：纯素选择。"
+    }
+  },
+  "pho_xao_mix": {
+    "description": {
+      "ru": "Pho xào MIX — жареная лапша Фо с двумя видами начинки (например: курица + креветки).",
+      "ua": "Phở xào MIX — смажена локшина Фо з двома видами начинки (наприклад: курка + креветки).",
+      "en": "Fried Pho MIX: two toppings in one wok dish (e.g., chicken + shrimp).",
+      "vn": "Phở xào mix: xào với 2 loại nhân (ví dụ: gà + tôm).",
+      "pl": "Pho xào MIX: dwa dodatki w jednej porcji (np. kurczak + krewetki).",
+      "de": "Pho xào MIX: zwei Einlagen in einer Portion (z. B. Huhn + Garnelen).",
+      "zh": "炒河粉 MIX：两种配料（例如鸡肉+虾）。"
+    }
+  },
+
+  "mien_xao_ga": {
+    "description": {
+      "ru": "Стеклянная лапша (миен) с курицей и овощами, обжаренная в воке. Без бульона.",
+      "ua": "Скляна локшина (мієн) з куркою та овочами, обсмажена у вок. Без бульйону.",
+      "en": "WOK-fried glass noodles (mien) with chicken and vegetables. No broth.",
+      "vn": "Miến xào gà: miến xào với rau và gà, không có nước dùng.",
+      "pl": "Smażony w woku makaron szklany (mien) z kurczakiem i warzywami. Bez bulionu.",
+      "de": "Im Wok gebratene Glasnudeln (Mien) mit Huhn und Gemüse. Ohne Brühe.",
+      "zh": "鸡肉炒粉丝：粉丝与蔬菜快炒，不含汤。"
+    }
+  },
+  "mien_xao_bo": {
+    "description": {
+      "ru": "Стеклянная лапша Миен с говядиной и овощами. Насыщенный вкус и сочная подача.",
+      "ua": "Скляна локшина Мієн з яловичиною та овочами. Насичений смак та соковита подача.",
+      "en": "WOK-fried glass noodles (mien) with beef and vegetables — rich and juicy.",
+      "vn": "Miến xào bò: miến xào bò và rau, vị đậm, no lâu.",
+      "pl": "Mien smażone z wołowiną i warzywami — treściwe.",
+      "de": "Gebratene Mien mit Rind und Gemüse — kräftig und saftig.",
+      "zh": "牛肉炒粉丝：更浓更香。"
+    }
+  },
+  "mien_xao_heo": {
+    "description": {
+      "ru": "Стеклянная лапша Миен со свининой и овощами, обжаренная в воке.",
+      "ua": "Скляна локшина Мієн зі свининою та овочами, обсмажена у вок.",
+      "en": "WOK-fried glass noodles (mien) with pork and vegetables.",
+      "vn": "Miến xào heo: miến xào với heo và rau, nhanh và ngon.",
+      "pl": "Mien smażone z wieprzowiną i warzywami.",
+      "de": "Gebratene Glasnudeln (Mien) mit Schwein und Gemüse.",
+      "zh": "猪肉炒粉丝：粉丝与蔬菜快炒。"
+    }
+  },
+  "mien_xao_tom": {
+    "description": {
+      "ru": "Стеклянная лапша Миен с креветками и овощами. Лёгкий морской вок.",
+      "ua": "Скляна локшина Мієн з креветками та овочами. Легкий морський вок.",
+      "en": "WOK-fried glass noodles (mien) with shrimp and vegetables — light seafood wok.",
+      "vn": "Miến xào tôm: miến xào tôm và rau, vị hải sản.",
+      "pl": "Mien smażone z krewetkami i warzywami — lekka wersja.",
+      "de": "Gebratene Mien mit Garnelen und Gemüse — leichte Seafood-Variante.",
+      "zh": "虾炒粉丝：清爽海鲜风味。"
+    }
+  },
+  "mien_xao_tofu": {
+    "description": {
+      "ru": "Стеклянная лапша Миен с тофу и овощами. Лёгкий вариант без мяса.",
+      "ua": "Скляна локшина Мієн з тофу та овочами. Легкий варіант без м’яса.",
+      "en": "WOK-fried glass noodles (mien) with tofu and vegetables — meatless option.",
+      "vn": "Miến xào đậu hũ: miến xào với đậu hũ và rau, không thịt.",
+      "pl": "Mien smażone z tofu i warzywami — bez mięsa.",
+      "de": "Gebratene Mien mit Tofu und Gemüse — ohne Fleisch.",
+      "zh": "豆腐炒粉丝：无肉清爽。"
+    }
+  },
+  "mien_xao_rau": {
+    "description": {
+      "ru": "Стеклянная лапша Миен с овощами, обжаренная в воке. Веганский вариант.",
+      "ua": "Скляна локшина Мієн з овочами, обсмажена у вок. Веганський варіант.",
+      "en": "WOK-fried glass noodles (mien) with vegetables — vegan.",
+      "vn": "Miến xào rau: miến xào rau củ, thuần chay.",
+      "pl": "Mien smażone z warzywami — wegańskie.",
+      "de": "Gebratene Mien mit Gemüse — vegan.",
+      "zh": "蔬菜炒粉丝：纯素选择。"
+    }
+  },
+  "mien_xao_mix": {
+    "description": {
+      "ru": "Miến xào MIX — стеклянная лапша, обжаренная в воке, с двумя видами начинки (например: говядина + креветки).",
+      "ua": "Miến xào MIX — скляна локшина, обсмажена у вок, з двома видами начинки (наприклад: яловичина + креветки).",
+      "en": "Fried Mien MIX: glass noodles wok-fried with two toppings (e.g., beef + shrimp).",
+      "vn": "Miến xào mix: xào với 2 loại nhân (ví dụ: bò + tôm).",
+      "pl": "Miến xào MIX: dwa dodatki w jednej porcji (np. wołowina + krewetki).",
+      "de": "Miến xào MIX: zwei Einlagen (z. B. Rind + Garnelen) im Wok gebraten.",
+      "zh": "炒粉丝 MIX：两种配料（例如牛肉+虾）。"
+    }
+  },
+
+  "mi_xao_ga": {
+    "description": {
+      "ru": "Жареная лапша (яичная/пшеничная) с курицей и овощами. Классический вок без бульона.",
+      "ua": "Смажена локшина (яєчна/пшенична) з куркою та овочами. Класичний вок без бульйону.",
+      "en": "WOK-fried noodles (egg/wheat) with chicken and vegetables. No broth.",
+      "vn": "Mì xào gà: mì xào với gà và rau, không có nước dùng.",
+      "pl": "Smażony makaron (jajeczny/pszenny) z kurczakiem i warzywami. Bez bulionu.",
+      "de": "Gebratene Nudeln (Ei/Weizen) mit Huhn und Gemüse. Ohne Brühe.",
+      "zh": "鸡肉炒面：面条与蔬菜快炒，不含汤。"
+    }
+  },
+  "mi_xao_bo": {
+    "description": {
+      "ru": "Жареная лапша с говядиной и овощами. Насыщенно, сытно, идеальный вок.",
+      "ua": "Смажена локшина з яловичиною та овочами. Насичено, ситно, ідеальний вок.",
+      "en": "WOK-fried noodles with beef and vegetables — rich and filling.",
+      "vn": "Mì xào bò: mì xào bò và rau, đậm vị, no lâu.",
+      "pl": "Smażony makaron z wołowiną i warzywami — sycący.",
+      "de": "Gebratene Nudeln mit Rind und Gemüse — kräftig und sättigend.",
+      "zh": "牛肉炒面：更饱腹更香。"
+    }
+  },
+  "mi_xao_heo": {
+    "description": {
+      "ru": "Жареная лапша со свининой и овощами. Мягкий вкус, без бульона.",
+      "ua": "Смажена локшина зі свининою та овочами. М’який смак, без бульйону.",
+      "en": "WOK-fried noodles with pork and vegetables. No broth.",
+      "vn": "Mì xào heo: mì xào với heo và rau, không nước dùng.",
+      "pl": "Smażony makaron z wieprzowiną i warzywami. Bez bulionu.",
+      "de": "Gebratene Nudeln mit Schwein und Gemüse. Ohne Brühe.",
+      "zh": "猪肉炒面：面条与蔬菜快炒。"
+    }
+  },
+  "mi_xao_tom": {
+    "description": {
+      "ru": "Жареная лапша с креветками и овощами. Морской вариант вока.",
+      "ua": "Смажена локшина з креветками та овочами. Морський варіант вока.",
+      "en": "WOK-fried noodles with shrimp and vegetables — seafood wok.",
+      "vn": "Mì xào tôm: mì xào tôm và rau, vị hải sản.",
+      "pl": "Smażony makaron z krewetkami i warzywami — morska wersja.",
+      "de": "Gebratene Nudeln mit Garnelen und Gemüse — Seafood-Version.",
+      "zh": "虾炒面：海鲜风味。"
+    }
+  },
+  "mi_xao_tofu": {
+    "description": {
+      "ru": "Жареная лапша с тофу и овощами. Лёгкий вариант без мяса.",
+      "ua": "Смажена локшина з тофу та овочами. Легкий варіант без м’яса.",
+      "en": "WOK-fried noodles with tofu and vegetables — meatless option.",
+      "vn": "Mì xào đậu hũ: mì xào với đậu hũ và rau, không thịt.",
+      "pl": "Smażony makaron z tofu i warzywami — bez mięsa.",
+      "de": "Gebratene Nudeln mit Tofu und Gemüse — ohne Fleisch.",
+      "zh": "豆腐炒面：无肉清爽。"
+    }
+  },
+  "mi_xao_rau": {
+    "description": {
+      "ru": "Жареная лапша с овощами. Веганский вариант вока без мяса.",
+      "ua": "Смажена локшина з овочами. Веганський варіант вока без м’яса.",
+      "en": "WOK-fried noodles with vegetables — vegan.",
+      "vn": "Mì xào rau: mì xào rau củ, thuần chay.",
+      "pl": "Smażony makaron z warzywami — wegański.",
+      "de": "Gebratene Nudeln mit Gemüse — vegan.",
+      "zh": "蔬菜炒面：纯素选择。"
+    }
+  },
+  "mi_xao_mix": {
+    "description": {
+      "ru": "Mì xào MIX — жареная лапша с двумя видами начинки (например: курица + говядина).",
+      "ua": "Mì xào MIX — смажена локшина з двома видами начинки (наприклад: курка + яловичина).",
+      "en": "Fried Noodles MIX: two toppings in one wok dish (e.g., chicken + beef).",
+      "vn": "Mì xào mix: xào với 2 loại nhân (ví dụ: gà + bò).",
+      "pl": "Mì xào MIX: dwa dodatki w jednej porcji (np. kurczak + wołowina).",
+      "de": "Mì xào MIX: zwei Einlagen in einer Portion (z. B. Huhn + Rind).",
+      "zh": "炒面 MIX：两种配料（例如鸡肉+牛肉）。"
+    }
+  },
+
+  "com_thit_ga_kho": {
+    "description": {
+      "ru": "Рис с тушёной курицей в соусе. Домашнее блюдо, вкус мягкий и сытный.",
+      "ua": "Рис з тушкованою куркою в соусі. Домашня страва, м’який і ситний смак.",
+      "en": "Rice with braised chicken in sauce — comforting and filling.",
+      "vn": "Cơm thịt gà kho: cơm với gà kho, vị đậm nhẹ, no lâu.",
+      "pl": "Ryż z duszonym kurczakiem w sosie — domowe i sycące.",
+      "de": "Reis mit geschmortem Huhn in Sauce — herzhaft und sättigend.",
+      "zh": "卤鸡饭：米饭配卤鸡，温和饱腹。"
+    }
+  },
+  "com_thit_bo_kho": {
+    "description": {
+      "ru": "Рис с тушёной говядиной в ароматных специях. Сытное блюдо на каждый день.",
+      "ua": "Рис з тушкованою яловичиною в ароматних спеціях. Ситна страва на щодень.",
+      "en": "Rice with braised beef in aromatic spices — hearty everyday dish.",
+      "vn": "Cơm thịt bò kho: cơm với bò kho thơm, đậm đà.",
+      "pl": "Ryż z duszoną wołowiną w aromatycznych przyprawach — sycące.",
+      "de": "Reis mit geschmortem Rind in aromatischen Gewürzen — sehr sättigend.",
+      "zh": "卤牛肉饭：香料炖牛肉配米饭。"
+    }
+  },
+  "com_thit_heo_kho": {
+    "description": {
+      "ru": "Рис с тушёной свининой в соусе. Мягкий вкус, подойдёт всем.",
+      "ua": "Рис з тушкованою свининою в соусі. М’який смак, підійде всім.",
+      "en": "Rice with braised pork in sauce — mild and crowd-pleasing.",
+      "vn": "Cơm thịt heo kho: cơm với heo kho, vị dịu, dễ ăn.",
+      "pl": "Ryż z duszoną wieprzowiną w sosie — łagodny smak.",
+      "de": "Reis mit geschmortem Schwein in Sauce — mild und beliebt.",
+      "zh": "卤猪肉饭：口味温和，适合大多数人。"
+    }
+  },
+  "com_thit_tom_kho": {
+    "description": {
+      "ru": "Рис с тушёными креветками в соусе. Морской вариант, ароматный и яркий.",
+      "ua": "Рис з тушкованими креветками в соусі. Морський варіант, ароматний і яскравий.",
+      "en": "Rice with braised shrimp in sauce — aromatic seafood option.",
+      "vn": "Cơm tôm kho: cơm với tôm kho, thơm, vị hải sản.",
+      "pl": "Ryż z duszonymi krewetkami w sosie — aromatyczna wersja morska.",
+      "de": "Reis mit geschmorten Garnelen in Sauce — aromatische Seafood-Variante.",
+      "zh": "卤虾饭：海鲜香气更突出。"
+    }
+  },
+  "com_chay": {
+    "description": {
+      "ru": "Вегетарианский рис с овощами. Лёгкий вариант без мяса и без рыбы.",
+      "ua": "Вегетаріанський рис з овочами. Легкий варіант без м’яса та риби.",
+      "en": "Vegetarian rice with vegetables — light and meat-free.",
+      "vn": "Cơm chay: cơm với rau củ, thuần chay/không thịt.",
+      "pl": "Ryż wegetariański z warzywami — lekki i bez mięsa.",
+      "de": "Vegetarischer Reis mit Gemüse — leicht und fleischlos.",
+      "zh": "素饭：米饭配蔬菜，清爽无肉。"
+    }
+  },
+  "com_nem": {
+    "description": {
+      "ru": "Рис + хрустящий нем (жареный спринг-ролл). Понятный набор: рис и закуска в одном блюде.",
+      "ua": "Рис + хрусткий нем (смажений спрінг-рол). Зрозумілий сет: рис і закуска в одній страві.",
+      "en": "Rice + crispy nem (fried spring roll) — simple, satisfying combo.",
+      "vn": "Cơm nem: cơm ăn kèm nem rán giòn. Dễ ăn, no.",
+      "pl": "Ryż + chrupiące nem (smażona sajgonka) — prosty, sycący zestaw.",
+      "de": "Reis + knuspriges Nem (frittierte Frühlingsrolle) — einfach und sättigend.",
+      "zh": "米饭配炸春卷：简单又饱腹。"
+    }
+  },
+
+  "com_rang_ga": {
+    "description": {
+      "ru": "Жареный рис с овощами и курицей. Быстро, сытно, отлично как основной вариант.",
+      "ua": "Смажений рис з овочами та куркою. Швидко, ситно, чудовий основний варіант.",
+      "en": "Fried rice with vegetables and chicken — quick and filling.",
+      "vn": "Cơm rang gà: cơm chiên với rau và gà. No lâu.",
+      "pl": "Ryż smażony z warzywami i kurczakiem — szybko i sycąco.",
+      "de": "Gebratener Reis mit Gemüse und Huhn — schnell und sättigend.",
+      "zh": "鸡肉炒饭：快捷又饱腹。"
+    }
+  },
+  "com_rang_bo": {
+    "description": {
+      "ru": "Жареный рис с говядиной и овощами. Насыщенный вкус, хороший аппетит гарантирован.",
+      "ua": "Смажений рис з яловичиною та овочами. Насичений смак, апетит гарантовано.",
+      "en": "Fried rice with beef and vegetables — rich and satisfying.",
+      "vn": "Cơm rang bò: cơm chiên bò và rau, đậm vị.",
+      "pl": "Ryż smażony z wołowiną i warzywami — intensywny smak.",
+      "de": "Gebratener Reis mit Rind und Gemüse — kräftig und sättigend.",
+      "zh": "牛肉炒饭：更浓更香。"
+    }
+  },
+  "com_rang_tom": {
+    "description": {
+      "ru": "Жареный рис с креветками и овощами. Морской вариант, лёгкий и ароматный.",
+      "ua": "Смажений рис з креветками та овочами. Морський варіант, легкий і ароматний.",
+      "en": "Fried rice with shrimp and vegetables — light seafood option.",
+      "vn": "Cơm rang tôm: cơm chiên tôm và rau, thơm, dễ ăn.",
+      "pl": "Ryż smażony z krewetkami i warzywami — lekka morska wersja.",
+      "de": "Gebratener Reis mit Garnelen und Gemüse — leichte Seafood-Variante.",
+      "zh": "虾仁炒饭：海鲜清香。"
+    }
+  },
+  "com_rang_heo": {
+    "description": {
+      "ru": "Жареный рис со свининой и овощами. Сытно и по-домашнему.",
+      "ua": "Смажений рис зі свининою та овочами. Ситно й по-домашньому.",
+      "en": "Fried rice with pork and vegetables — hearty and comforting.",
+      "vn": "Cơm rang heo: cơm chiên heo và rau, no lâu.",
+      "pl": "Ryż smażony z wieprzowiną i warzywami — sycący.",
+      "de": "Gebratener Reis mit Schwein und Gemüse — herzhaft.",
+      "zh": "猪肉炒饭：家常饱腹。"
+    }
+  },
+  "com_rang_tofu": {
+    "description": {
+      "ru": "Жареный рис с тофу и овощами. Лёгкий вариант без мяса.",
+      "ua": "Смажений рис з тофу та овочами. Легкий варіант без м’яса.",
+      "en": "Fried rice with tofu and vegetables — meatless option.",
+      "vn": "Cơm rang đậu hũ: cơm chiên đậu hũ và rau, không thịt.",
+      "pl": "Ryż smażony z tofu i warzywami — bez mięsa.",
+      "de": "Gebratener Reis mit Tofu und Gemüse — ohne Fleisch.",
+      "zh": "豆腐炒饭：清爽无肉。"
+    }
+  },
+  "com_rang_rau": {
+    "description": {
+      "ru": "Жареный рис с овощами. Веганский вариант, простой и вкусный.",
+      "ua": "Смажений рис з овочами. Веганський варіант, простий і смачний.",
+      "en": "Fried rice with vegetables — vegan, simple and tasty.",
+      "vn": "Cơm rang rau: cơm chiên rau củ, thuần chay, dễ ăn.",
+      "pl": "Ryż smażony z warzywami — wegański, prosty i smaczny.",
+      "de": "Gebratener Reis mit Gemüse — vegan, simpel und lecker.",
+      "zh": "蔬菜炒饭：纯素简单好吃。"
+    }
+  },
+  "com_rang_mix": {
+    "description": {
+      "ru": "Cơm rang MIX — жареный рис с двумя видами начинки (например: курица + креветки).",
+      "ua": "Cơm rang MIX — смажений рис з двома видами начинки (наприклад: курка + креветки).",
+      "en": "Fried Rice MIX: two toppings in one portion (e.g., chicken + shrimp).",
+      "vn": "Cơm rang mix: cơm chiên với 2 loại nhân (ví dụ: gà + tôm).",
+      "pl": "Ryż smażony MIX: dwa dodatki w jednej porcji (np. kurczak + krewetki).",
+      "de": "Gebratener Reis MIX: zwei Einlagen in einer Portion (z. B. Huhn + Garnelen).",
+      "zh": "炒饭 MIX：两种配料（例如鸡肉+虾）。"
+    }
+  },
+
+  "nem_ran": {
+    "description": {
+      "ru": "Нэм (жареные спринг-роллы): хрустящие рулетики с начинкой, подаются с соусом. Отличная закуска к супу или воку.",
+      "ua": "Нем (смажені спрінг-роли): хрусткі рулетики з начинкою, подаються з соусом. Чудова закуска до супу чи воку.",
+      "en": "Fried nem (spring rolls): crispy rolls with filling, served with sauce. Great appetizer.",
+      "vn": "Nem rán: cuốn chiên giòn, ăn kèm nước chấm. Món khai vị rất hợp.",
+      "pl": "Smażone nem: chrupiące roladki z farszem, podawane z sosem. Świetna przystawka.",
+      "de": "Frittierte Nem: knusprige Rollen mit Füllung, dazu Sauce. Perfekte Vorspeise.",
+      "zh": "炸春卷：外皮酥脆，配蘸酱，适合作为开胃菜。"
+    }
+  },
+  "spring_rolls": {
+    "description": {
+      "ru": "Свежие спринг-роллы: лёгкие роллы в рисовой бумаге с овощами (и начинкой по выбору). Подаются с соусом.",
+      "ua": "Свіжі спрінг-роли: легкі роли в рисовому папері з овочами (і начинкою на вибір). Подаються з соусом.",
+      "en": "Fresh spring rolls: light rice paper rolls with vegetables (and optional filling). Served with sauce.",
+      "vn": "Gỏi cuốn: cuốn tươi bằng bánh tráng, rau và nhân tùy chọn. Ăn kèm nước chấm.",
+      "pl": "Świeże spring rollsy: lekkie rolki w papierze ryżowym z warzywami (i dodatkiem do wyboru). Z sosem.",
+      "de": "Frische Rollen: leichte Reispapierrollen mit Gemüse (und optionaler Füllung). Mit Sauce.",
+      "zh": "生春卷：米纸卷蔬菜（可选配料），配蘸酱。"
+    }
+  },
+
+  "caphe_viet": {
+    "description": {
+      "ru": "Вьетнамский кофе: крепкий вкус, обычно со сгущённым молоком. Можно сделать более сладким или более крепким.",
+      "ua": "В’єтнамська кава: міцний смак, зазвичай зі згущеним молоком. Можна зробити солодшою або міцнішою.",
+      "en": "Vietnamese coffee: strong, often with condensed milk. Can be sweeter or stronger.",
+      "vn": "Cà phê Việt: vị đậm, thường uống với sữa đặc. Có thể chỉnh ngọt/đậm theo ý.",
+      "pl": "Kawa wietnamska: mocna, często ze słodzonym mlekiem skondensowanym. Można dopasować słodycz.",
+      "de": "Vietnamesischer Kaffee: kräftig, oft mit Kondensmilch. Süße/Stärke anpassbar.",
+      "zh": "越南咖啡：口感浓郁，常配炼乳；甜度与浓度可调整。"
+    }
+  },
+  "nuoc_chanh": {
+    "description": {
+      "ru": "Освежающий лимонад с лаймом/лимоном. Хорошо подходит к острому и к воку.",
+      "ua": "Освіжаючий лимонад з лаймом/лимоном. Добре підходить до гострого та до воку.",
+      "en": "Refreshing lemon/lime drink — perfect with spicy dishes and wok.",
+      "vn": "Nước chanh: chanh/chanh xanh mát, hợp với món cay và món xào.",
+      "pl": "Orzeźwiający napój cytrynowo-limonkowy — świetny do dań pikantnych i woka.",
+      "de": "Erfrischendes Zitrone/Limette-Getränk — passt zu scharfem Essen und Wok.",
+      "zh": "青柠/柠檬清爽饮品，搭配辣味与炒菜很合适。"
+    }
+  },
+  "bo_huc": {
+    "description": {
+      "ru": "Вьетнамский энергетик Bò Húc. Когда нужен заряд — без лишних вопросов.",
+      "ua": "В’єтнамський енергетик Bò Húc. Коли потрібен заряд — без зайвих питань.",
+      "en": "Vietnamese energy drink Bò Húc — instant boost, no questions asked.",
+      "vn": "Nước bò húc: nước tăng lực phổ biến ở Việt Nam, tỉnh táo nhanh.",
+      "pl": "Wietnamski energetyk Bò Húc — szybki zastrzyk energii.",
+      "de": "Vietnamesischer Energy-Drink Bò Húc — schneller Energiekick.",
+      "zh": "越南能量饮料 Bò Húc：快速提神。"
+    }
+  }
+}

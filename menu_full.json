@@ -1,0 +1,1430 @@
+{
+  "BOBA_MATCHA": {
+    "name": {
+      "ua": "Молочний чай з матчу",
+      "ru": "Молочный чай с матча",
+      "pl": "Herbata mleczna matcha",
+      "en": "Matcha Milk Tea",
+      "vn": "Trà sữa matcha",
+      "zh": "抹茶奶茶"
+    },
+    "image": "BOBA_MATCHA.png",
+    "menu": "bubble_tea",
+    "desc": "descriptions.json[BOBA_MATCHA]",
+    "price": "120 грн"
+  },
+  "BOBA_TARO": {
+    "name": {
+      "ua": "Молочний чай зі смаком Таро",
+      "ru": "Молочный чай с таро",
+      "pl": "Herbata mleczna taro",
+      "en": "Taro Milk Tea",
+      "vn": "Trà sữa khoai môn",
+      "zh": "芋头奶茶"
+    },
+    "image": "BOBA_TARO.png",
+    "menu": "bubble_tea",
+    "desc": "descriptions.json[BOBA_TARO]",
+    "price": "120 грн"
+  },
+  "BOBA_CHOCOLATE": {
+    "name": {
+      "ua": "Молочний чай з шоколадом",
+      "ru": "Молочный чай с шоколадом",
+      "pl": "Herbata mleczna czekoladowa",
+      "en": "Chocolate Milk Tea",
+      "vn": "Trà sữa socola",
+      "zh": "巧克力奶茶"
+    },
+    "image": "BOBA_CHOCOLATE.png",
+    "menu": "bubble_tea",
+    "desc": "descriptions.json[BOBA_CHOCOLATE]",
+    "price": "120 грн"
+  },
+  "BOBA_BROWN_SUGAR_MILK": {
+    "name": {
+      "ua": "Чай з молоком зі смаком чорного цукру",
+      "ru": "Чай с молоком со вкусом чёрного сахара",
+      "pl": "Mleczna herbata z brązowym cukrem",
+      "en": "Brown Sugar Milk Tea",
+      "vn": "Trà sữa đường đen",
+      "zh": "黑糖奶茶"
+    },
+    "image": "TOPPING_BROWN_SUGAR.png",
+    "menu": "bubble_tea",
+    "desc": "descriptions.json[BOBA_BROWN_SUGAR_MILK]",
+    "price": "120 грн"
+  },
+  "BOBA_STRAWBERRY": {
+    "name": {
+      "ua": "Молочний чай зі смаком полуниці",
+      "ru": "Молочный чай со вкусом клубники",
+      "pl": "Herbata mleczna truskawkowa",
+      "en": "Strawberry Milk Tea",
+      "vn": "Trà sữa dâu",
+      "zh": "草莓奶茶"
+    },
+    "image": "BOBA_STRAWBERRY.png",
+    "menu": "bubble_tea",
+    "desc": "descriptions.json[BOBA_STRAWBERRY]",
+    "price": "120 грн"
+  },
+  "BOBA_MANGO": {
+    "name": {
+      "ua": "Молочний чай з манго",
+      "ru": "Молочный чай с манго",
+      "pl": "Herbata mleczna mango",
+      "en": "Mango Milk Tea",
+      "vn": "Trà sữa xoài",
+      "zh": "芒果奶茶"
+    },
+    "image": "BOBA_MANGO.png",
+    "menu": "bubble_tea",
+    "desc": "descriptions.json[BOBA_MANGO]",
+    "price": "120 грн"
+  },
+  "BOBA_BROWN_SUGAR": {
+    "name": {
+      "ua": "Чай з молоком з коричневим цукром",
+      "ru": "Чай с молоком с коричневым сахаром",
+      "pl": "Mleczna herbata z cukrem brązowym",
+      "en": "Brown Sugar Milk",
+      "vn": "Sữa tươi đường nâu",
+      "zh": "黑糖鲜奶"
+    },
+    "image": "TOPPING_BROWN_SUGAR.png",
+    "menu": "bubble_tea",
+    "desc": "descriptions.json[BOBA_BROWN_SUGAR]",
+    "price": "120 грн"
+  },
+  "BOBA_COCONUT": {
+    "name": {
+      "ua": "Молочний чай зі смаком кокосу",
+      "ru": "Молочный чай со вкусом кокоса",
+      "pl": "Herbata mleczna kokosowa",
+      "en": "Coconut Milk Tea",
+      "vn": "Trà sữa dừa",
+      "zh": "椰子奶茶"
+    },
+    "image": "BOBA_COCONUT.png",
+    "menu": "bubble_tea",
+    "desc": "descriptions.json[BOBA_COCONUT]",
+    "price": "120 грн"
+  },
+  "BOBA_OREO": {
+    "name": {
+      "ua": "Молочний чай з печивом Орео",
+      "ru": "Молочный чай с печеньем Орео",
+      "pl": "Herbata mleczna z Oreo",
+      "en": "Oreo Milk Tea",
+      "vn": "Trà sữa Oreo",
+      "zh": "奥利奥奶茶"
+    },
+    "image": "BOBA_OREO.png",
+    "menu": "bubble_tea",
+    "desc": "descriptions.json[BOBA_OREO]",
+    "price": "120 грн"
+  },
+  "FRUIT_TEA_PEACH": {
+    "name": {
+      "ua": "Чай з персиком",
+      "ru": "Чай с персиком",
+      "pl": "Herbata brzoskwiniowa",
+      "en": "Peach Tea",
+      "vn": "Trà đào",
+      "zh": "蜜桃茶"
+    },
+    "image": "FRUIT_TEA_PEACH.png",
+    "menu": "fruit_tea",
+    "desc": "descriptions.json[FRUIT_TEA_PEACH]",
+    "price": "M: 60 | L: 80 грн"
+  },
+  "FRUIT_TEA_ORANGE": {
+    "name": {
+      "ua": "Апельсиновий чай",
+      "ru": "Апельсиновый чай",
+      "pl": "Herbata pomarańczowa",
+      "en": "Orange Tea",
+      "vn": "Trà cam",
+      "zh": "橙子茶"
+    },
+    "image": "FRUIT_TEA_ORANGE.png",
+    "menu": "fruit_tea",
+    "desc": "descriptions.json[FRUIT_TEA_ORANGE]",
+    "price": "M: 60 | L: 80 грн"
+  },
+  "FRUIT_TEA_WATERMELON": {
+    "name": {
+      "ua": "Кавуновий чай",
+      "ru": "Чай с арбузом",
+      "pl": "Herbata arbuzowa",
+      "en": "Watermelon Tea",
+      "vn": "Trà dưa hấu",
+      "zh": "西瓜茶"
+    },
+    "image": "FRUIT_TEA_WATERMELON.png",
+    "menu": "fruit_tea",
+    "desc": "descriptions.json[FRUIT_TEA_WATERMELON]",
+    "price": "M: 80 | L: 100 грн"
+  },
+  "FRUIT_TEA_LEMON": {
+    "name": {
+      "ua": "Чай з лимоном",
+      "ru": "Чай с лимоном",
+      "pl": "Herbata z cytryną",
+      "en": "Lemon Tea",
+      "vn": "Trà chanh",
+      "zh": "柠檬茶"
+    },
+    "image": "FRUIT_TEA_LEMON.png",
+    "menu": "fruit_tea",
+    "desc": "descriptions.json[FRUIT_TEA_LEMON]",
+    "price": "M: 60 | L: 80 грн"
+  },
+  "FRUIT_TEA_MANGO": {
+    "name": {
+      "ua": "Чай з манго",
+      "ru": "Чай с манго",
+      "pl": "Herbata z mango",
+      "en": "Mango Tea",
+      "vn": "Trà xoài",
+      "zh": "芒果茶"
+    },
+    "image": "FRUIT_TEA_MANGO.png",
+    "menu": "fruit_tea",
+    "desc": "descriptions.json[FRUIT_TEA_MANGO]",
+    "price": "M: 80 | L: 100 грн"
+  },
+  "FRUIT_TEA_STRAWBERRY": {
+    "name": {
+      "ua": "Чай з полуницею",
+      "ru": "Чай с клубникой",
+      "pl": "Herbata truskawkowa",
+      "en": "Strawberry Tea",
+      "vn": "Trà dâu",
+      "zh": "草莓茶"
+    },
+    "image": "FRUIT_TEA_STRAWBERRY.png",
+    "menu": "fruit_tea",
+    "desc": "descriptions.json[FRUIT_TEA_STRAWBERRY]",
+    "price": "M: 80 | L: 100 грн"
+  },
+  "FRUIT_TEA_PASSION": {
+    "name": {
+      "ua": "Маркуйя зуп",
+      "ru": "Маракуйя чай",
+      "pl": "Herbata z marakują",
+      "en": "Passion Fruit Tea",
+      "vn": "Trà chanh dây",
+      "zh": "百香果茶"
+    },
+    "image": "FRUIT_TEA_PASSION.png",
+    "menu": "fruit_tea",
+    "desc": "descriptions.json[FRUIT_TEA_PASSION]",
+    "price": "M: 80 | L: 100 грн"
+  },
+  "FRUIT_TEA_ICE_LEMON": {
+    "name": {
+      "ua": "Холодний чай з лимоном",
+      "ru": "Холодный чай с лимоном",
+      "pl": "Lodowa herbata z cytryną",
+      "en": "Iced Lemon Tea",
+      "vn": "Trà chanh đá",
+      "zh": "冰柠檬茶"
+    },
+    "image": "FRUIT_TEA_ICE_LEMON.png",
+    "menu": "fruit_tea",
+    "desc": "descriptions.json[FRUIT_TEA_ICE_LEMON]",
+    "price": "60 грн"
+  },
+  "FRUIT_TEA_ICE": {
+    "name": {
+      "ua": "Холодний чай",
+      "ru": "Холодный чай",
+      "pl": "Herbata mrożona",
+      "en": "Iced Tea",
+      "vn": "Trà đá",
+      "zh": "冰红茶"
+    },
+    "image": "FRUIT_TEA_ICE.png",
+    "menu": "fruit_tea",
+    "desc": "descriptions.json[FRUIT_TEA_ICE]",
+    "price": "40 грн"
+  },
+  "COFFEE_FILTER": {
+    "name": {
+      "ua": "Фільтр для кави чорний / карамельний",
+      "ru": "Фильтр-кофе чёрный / карамельный",
+      "pl": "Kawa przelewowa czarna / karmelowa",
+      "en": "Filter Coffee (black/caramel)",
+      "vn": "Cà phê phin đen / caramel",
+      "zh": "滤泡咖啡（黑/焦糖）"
+    },
+    "image": "COFFEE_FILTER.png",
+    "menu": "coffee",
+    "desc": "descriptions.json[COFFEE_FILTER]",
+    "price": "60 грн"
+  },
+  "COFFEE_LATTE": {
+    "name": {
+      "ua": "Молочна кава",
+      "ru": "Кофе с молоком",
+      "pl": "Kawa mleczna",
+      "en": "Caffe Latte",
+      "vn": "Cà phê sữa",
+      "zh": "拿铁咖啡"
+    },
+    "image": "COFFEE_LATTE.png",
+    "menu": "coffee",
+    "desc": "descriptions.json[COFFEE_LATTE]",
+    "price": "60 грн"
+  },
+  "COCOA_WHITE": {
+    "name": {
+      "ua": "Біле какао",
+      "ru": "Белое какао",
+      "pl": "Białe kakao",
+      "en": "White Cocoa",
+      "vn": "Ca cao trắng",
+      "zh": "白可可"
+    },
+    "image": "COCOA_WHITE.png",
+    "menu": "coffee",
+    "desc": "descriptions.json[COCOA_WHITE]",
+    "price": "70 грн"
+  },
+  "COFFEE_ICE_CHOC": {
+    "name": {
+      "ua": "Холодна кава з шоколадом",
+      "ru": "Холодный кофе с шоколадом",
+      "pl": "Kawa mrożona czekoladowa",
+      "en": "Iced Chocolate Coffee",
+      "vn": "Cà phê sô cô la đá",
+      "zh": "冰巧克力咖啡"
+    },
+    "image": "COFFEE_ICE_CHOC.png",
+    "menu": "coffee",
+    "desc": "descriptions.json[COFFEE_ICE_CHOC]",
+    "price": "80 грн"
+  },
+  "ICE_LEMON_SNOW": {
+    "name": {
+      "ua": "Сніговий лимон",
+      "ru": "Снежный лимон",
+      "pl": "Cytryna śnieżna",
+      "en": "Snow Lemon Ice",
+      "vn": "Đá chanh tuyết",
+      "zh": "雪柠檬冰"
+    },
+    "image": "ICE_LEMON_SNOW.png",
+    "menu": "ice",
+    "desc": "descriptions.json[ICE_LEMON_SNOW]",
+    "price": "80 грн"
+  },
+  "ICE_MATCHA": {
+    "name": {
+      "ua": "Охолоджена матча",
+      "ru": "Холодный матча",
+      "pl": "Matcha mrożona",
+      "en": "Iced Matcha",
+      "vn": "Trà xanh đá",
+      "zh": "抹茶冰"
+    },
+    "image": "ICE_MATCHA.png",
+    "menu": "ice",
+    "desc": "descriptions.json[ICE_MATCHA]",
+    "price": "80 грн"
+  },
+  "ICE_COFFEE_LEMON": {
+    "name": {
+      "ua": "Кава з лимонним льодом",
+      "ru": "Кофе с лимонным льдом",
+      "pl": "Kawa z lodem cytrynowym",
+      "en": "Coffee with Lemon Ice",
+      "vn": "Cà phê đá chanh",
+      "zh": "柠檬冰咖啡"
+    },
+    "image": "ICE_COFFEE_LEMON.png",
+    "menu": "ice",
+    "desc": "descriptions.json[ICE_COFFEE_LEMON]",
+    "price": "80 грн"
+  },
+  "YOGURT_BROWN_SUGAR_TOFU": {
+    "name": {
+      "ua": "Тофу з чорного цукру і перлів",
+      "ru": "Тофу с чёрным сахаром и жемчугом",
+      "pl": "Tofu z brązowym cukrem i perłami",
+      "en": "Tofu with Brown Sugar & Pearls",
+      "vn": "Đậu hũ đường đen + trân châu",
+      "zh": "黑糖珍珠豆腐"
+    },
+    "image": "YOGURT_BROWN_SUGAR_TOFU.png",
+    "menu": "yogurt",
+    "desc": "descriptions.json[YOGURT_BROWN_SUGAR_TOFU]",
+    "price": "100 грн"
+  },
+  "YOGURT_MANGO_TOFU": {
+    "name": {
+      "ua": "Тофу з манго і кремом",
+      "ru": "Тофу с манго и кремом",
+      "pl": "Tofu z mango i kremem",
+      "en": "Mango & Cream Tofu",
+      "vn": "Đậu hũ xoài kem",
+      "zh": "芒果奶油豆腐"
+    },
+    "image": "YOGURT_MANGO.png",
+    "menu": "yogurt",
+    "desc": "descriptions.json[YOGURT_MANGO_TOFU]",
+    "price": "100 грн"
+  },
+  "YOGURT_COLD": {
+    "name": {
+      "ua": "Холодний йогурт",
+      "ru": "Холодный йогурт",
+      "pl": "Jogurt zimny",
+      "en": "Cold Yogurt",
+      "vn": "Sữa chua lạnh",
+      "zh": "冷酸奶"
+    },
+    "image": "YOGURT_COLD.png",
+    "menu": "yogurt",
+    "desc": "descriptions.json[YOGURT_COLD]",
+    "price": "60 грн"
+  },
+  "YOGURT_GREEN_GRAPE": {
+    "name": {
+      "ua": "Зелений йогурт з виноградом",
+      "ru": "Зелёный йогурт с виноградом",
+      "pl": "Zielony jogurt z winogronem",
+      "en": "Green Yogurt with Grape",
+      "vn": "Sữa chua xanh nho",
+      "zh": "青葡萄酸奶"
+    },
+    "image": "YOGURT_GREEN_GRAPE.png",
+    "menu": "yogurt",
+    "desc": "descriptions.json[YOGURT_GREEN_GRAPE]",
+    "price": "80 грн"
+  },
+  "YOGURT_STRAWBERRY": {
+    "name": {
+      "ua": "Йогурт з полуницею",
+      "ru": "Йогурт с клубникой",
+      "pl": "Jogurt truskawkowy",
+      "en": "Strawberry Yogurt",
+      "vn": "Sữa chua dâu",
+      "zh": "草莓酸奶"
+    },
+    "image": "YOGURT_STRAWBERRY.png",
+    "menu": "yogurt",
+    "desc": "descriptions.json[YOGURT_STRAWBERRY]",
+    "price": "100–150 грн"
+  },
+  "JUICE_ORANGE": {
+    "name": {
+      "ua": "Апельсиновий сік",
+      "ru": "Апельсиновый сок",
+      "pl": "Sok pomarańczowy",
+      "en": "Orange Juice",
+      "vn": "Nước cam",
+      "zh": "橙汁"
+    },
+    "image": "SOK_POMARANCZOWY.png",
+    "menu": "juices",
+    "desc": "descriptions.json[JUICE_ORANGE]",
+    "price": "S: 20 | M: 30 | L: 50 грн"
+  },
+  "JUICE_MANGO": {
+    "name": {
+      "ua": "Манговий сік",
+      "ru": "Манговый сок",
+      "pl": "Sok mango",
+      "en": "Mango Juice",
+      "vn": "Nước xoài",
+      "zh": "芒果汁"
+    },
+    "image": "JUICE_MANGO.png",
+    "menu": "juices",
+    "desc": "descriptions.json[JUICE_MANGO]",
+    "price": "S: 20 | M: 30 | L: 50 грн"
+  },
+  "SMOOTHIE_MANGO": {
+    "name": {
+      "ua": "Смузі манго",
+      "ru": "Смузи манго",
+      "pl": "Smoothie mango",
+      "en": "Mango Smoothie",
+      "vn": "Sinh tố xoài",
+      "zh": "芒果冰沙"
+    },
+    "image": "SMOOTHIE_MANGO.png",
+    "menu": "smoothies",
+    "desc": "descriptions.json[SMOOTHIE_MANGO]",
+    "price": "M: 120 | L: 150 грн"
+  },
+  "SMOOTHIE_STRAWBERRY": {
+    "name": {
+      "ua": "Смузі полуниця",
+      "ru": "Смузи клубника",
+      "pl": "Smoothie truskawkowe",
+      "en": "Strawberry Smoothie",
+      "vn": "Sinh tố dâu",
+      "zh": "草莓冰沙"
+    },
+    "image": "SMOOTHIE_STRAWBERRY.png",
+    "menu": "smoothies",
+    "desc": "descriptions.json[SMOOTHIE_STRAWBERRY]",
+    "price": "M: 120 | L: 150 грн"
+  },
+  "SMOOTHIE_WATERMELON": {
+    "name": {
+      "ua": "Смузі кавун",
+      "ru": "Смузи арбуз",
+      "pl": "Smoothie arbuzowe",
+      "en": "Watermelon Smoothie",
+      "vn": "Sinh tố dưa hấu",
+      "zh": "西瓜冰沙"
+    },
+    "image": "SMOOTHIE_WATERMELON.png",
+    "menu": "smoothies",
+    "desc": "descriptions.json[SMOOTHIE_WATERMELON]",
+    "price": "M: 120 | L: 150 грн"
+  },
+  "SMOOTHIE_LEMON": {
+    "name": {
+      "ua": "Смузі лимон",
+      "ru": "Смузи лимон",
+      "pl": "Smoothie cytrynowe",
+      "en": "Lemon Smoothie",
+      "vn": "Sinh tố chanh",
+      "zh": "柠檬冰沙"
+    },
+    "image": "SMOOTHIE_LEMON.png",
+    "menu": "smoothies",
+    "desc": "descriptions.json[SMOOTHIE_LEMON]",
+    "price": "M: 120 | L: 150 грн"
+  },
+  "SMOOTHIE_AVOCADO": {
+    "name": {
+      "ua": "Смузі авокадо",
+      "ru": "Смузи авокадо",
+      "pl": "Smoothie z awokado",
+      "en": "Avocado Smoothie",
+      "vn": "Sinh tố bơ",
+      "zh": "牛油果冰沙"
+    },
+    "image": "SMOOTHIE_AVOCADO.png",
+    "menu": "smoothies",
+    "desc": "descriptions.json[SMOOTHIE_AVOCADO]",
+    "price": "M: 180 | L: 200 грн"
+  },
+  "TOPPING_BROWN_SUGAR": {
+    "name": {
+      "ua": "Перли чорного цукру",
+      "ru": "Жемчуг из чёрного сахара",
+      "pl": "Perły brązowego cukru",
+      "en": "Brown Sugar Pearls",
+      "vn": "Trân châu đường đen",
+      "zh": "黑糖珍珠"
+    },
+    "image": "TOPPING_BROWN_SUGAR.png",
+    "menu": "toppings",
+    "desc": "descriptions.json[TOPPING_BROWN_SUGAR]",
+    "price": "20 грн"
+  },
+  "TOPPING_3Q": {
+    "name": {
+      "ua": "3Q (сайгонські кульки)",
+      "ru": "3Q (сайгонские шарики)",
+      "pl": "3Q kulki Sajgon",
+      "en": "3Q Saigon Balls",
+      "vn": "Thạch 3Q",
+      "zh": "3Q果冻"
+    },
+    "image": "TOPPING_3Q.png",
+    "menu": "toppings",
+    "desc": "descriptions.json[TOPPING_3Q]",
+    "price": "20 грн"
+  },
+  "TOPPING_GOLDEN_PEARL": {
+    "name": {
+      "ua": "Золота перлина",
+      "ru": "Золотая жемчужина",
+      "pl": "Złota perła",
+      "en": "Golden Pearl",
+      "vn": "Trân châu vàng",
+      "zh": "黄金珍珠"
+    },
+    "image": "TOPPING_GOLDEN_PEARL.png",
+    "menu": "toppings",
+    "desc": "descriptions.json[TOPPING_GOLDEN_PEARL]",
+    "price": "20 грн"
+  },
+  "TOPPING_LYCHEE": {
+    "name": {
+      "ua": "Лічі",
+      "ru": "Личи",
+      "pl": "Liczi",
+      "en": "Lychee",
+      "vn": "Vải",
+      "zh": "荔枝"
+    },
+    "image": "TOPPING_LYCHEE.png",
+    "menu": "toppings",
+    "desc": "descriptions.json[TOPPING_LYCHEE]",
+    "price": "20 грн"
+  },
+  "TOPPING_CARAMEL_SYRUP": {
+    "name": {
+      "ua": "Карамелізований сироп",
+      "ru": "Карамелизированный сироп",
+      "pl": "Syrop karmelizowany",
+      "en": "Caramelized Syrup",
+      "vn": "Siro caramel",
+      "zh": "焦糖糖浆"
+    },
+    "image": "TOPPING_CARAMEL_SYRUP.png",
+    "menu": "toppings",
+    "desc": "descriptions.json[TOPPING_CARAMEL_SYRUP]",
+    "price": "20 грн"
+  },
+  "ICE_CREAM_GENERIC": {
+    "name": {
+      "ua": "Морозиво",
+      "ru": "Мороженое",
+      "pl": "Lody",
+      "en": "Ice Cream",
+      "vn": "Kem",
+      "zh": "冰淇淋"
+    },
+    "image": "ICE_CREAM_GENERIC.png",
+    "menu": "ice_cream",
+    "desc": "descriptions.json[ICE_CREAM_GENERIC]",
+    "price": "100–150 грн"
+  },
+  "PHO_CHICKEN": {
+    "name": {
+      "pl": "Pho z kurczakiem",
+      "ua": "Фо з куркою",
+      "ru": "Фо с курицей",
+      "en": "Pho with Chicken",
+      "vn": "Phở gà",
+      "zh": "鸡肉河粉"
+    },
+    "image": "ZUPA_PHO_Z_KURCZAKIEM.png",
+    "menu": "soups",
+    "desc": "descriptions.json[PHO_CHICKEN]",
+    "price": "12 zł"
+  },
+  "PHO_BEEF": {
+    "name": {
+      "pl": "Pho z wołowiną",
+      "ua": "Фо з яловичиною",
+      "ru": "Фо с говядиной",
+      "en": "Pho with Beef",
+      "vn": "Phở bò",
+      "zh": "牛肉河粉"
+    },
+    "image": "ZUPA_PHO_Z_WOLOWINA.png",
+    "menu": "soups",
+    "desc": "descriptions.json[PHO_BEEF]",
+    "price": "14 zł"
+  },
+  "SOUP_CHICKEN_BROTH_SOYNOODLES": {
+    "name": {
+      "pl": "Rosół z makaronem sojowym i kurczakiem",
+      "ua": "Бульйон з соєвою локшиною та куркою",
+      "ru": "Бульон с соевой лапшой и курицей",
+      "en": "Chicken broth with soy noodles",
+      "vn": "Nước dùng gà với mì đậu nành",
+      "zh": "鸡肉豆面汤"
+    },
+    "image": "ROSOL_Z_MAKARONEM_SOJOWYM_I_KURCZAKIEM.png",
+    "menu": "soups",
+    "desc": "descriptions.json[SOUP_CHICKEN_BROTH_SOYNOODLES]",
+    "price": "18 zł"
+  },
+  "SOUP_SOUR_SPICY_CHICKEN": {
+    "name": {
+      "pl": "Zupa kwaśno-pikantna z kurczakiem",
+      "ua": "Кисло-гострий суп з куркою",
+      "ru": "Кисло-острый суп с курицей",
+      "en": "Sour & Spicy Chicken Soup",
+      "vn": "Súp chua cay gà",
+      "zh": "酸辣鸡汤"
+    },
+    "image": "ZUPA_KWASNO_PIKANTNA_Z_KURCZAKIEM.png",
+    "menu": "soups",
+    "desc": "descriptions.json[SOUP_SOUR_SPICY_CHICKEN]",
+    "price": "25 zł"
+  },
+  "SOUP_WONTON": {
+    "name": {
+      "pl": "Zupa Wonton",
+      "ua": "Суп Вонтон",
+      "ru": "Суп Вонтон",
+      "en": "Wonton Soup",
+      "vn": "Súp hoành thánh",
+      "zh": "云吞汤"
+    },
+    "image": "ZUPA_WONTON.png",
+    "menu": "soups",
+    "desc": "descriptions.json[SOUP_WONTON]",
+    "price": "25 zł"
+  },
+  "SOUP_TOMKHA_SHRIMP": {
+    "name": {
+      "pl": "Zupa Tom Kha Gai z krewetkami",
+      "ua": "Том Кха Гай з креветками",
+      "ru": "Том Кха Гай с креветками",
+      "en": "Tom Kha Gai with Shrimp",
+      "vn": "Tom Kha Gai (tôm)",
+      "zh": "虾仁冬阴椰奶汤"
+    },
+    "image": "ZUPA_TOM_KHA_GAI_Z_KREWETKAMI.png",
+    "menu": "soups",
+    "desc": "descriptions.json[SOUP_TOMKHA_SHRIMP]",
+    "price": "26 zł"
+  },
+  "SOUP_TOMKHA_CHICKEN": {
+    "name": {
+      "pl": "Zupa Tom Kha Gai z kurczakiem",
+      "ua": "Том Кха Гай з куркою",
+      "ru": "Том Кха Гай з курицей",
+      "en": "Tom Kha Gai with Chicken",
+      "vn": "Tom Kha Gai (gà)",
+      "zh": "鸡肉冬阴椰奶汤"
+    },
+    "image": "ZUPA_TOM_KHA_GAI_Z_KURCZAKIEM.png",
+    "menu": "soups",
+    "desc": "descriptions.json[SOUP_TOMKHA_CHICKEN]",
+    "price": "25 zł"
+  },
+  "SOUP_THAI_CHICKEN": {
+    "name": {
+      "pl": "Zupa po tajsku z kurczakiem",
+      "ua": "Тайський суп з куркою",
+      "ru": "Тайский суп с курицей",
+      "en": "Thai Soup with Chicken",
+      "vn": "Súp Thái (gà)",
+      "zh": "泰式鸡汤"
+    },
+    "image": "ZUPA_PO_TAJSKU_Z_KURCZAKIEM.png",
+    "menu": "soups",
+    "desc": "descriptions.json[SOUP_THAI_CHICKEN]",
+    "price": "25 zł"
+  },
+  "SOUP_THAI_SHRIMP": {
+    "name": {
+      "pl": "Zupa po tajsku z krewetkami",
+      "ua": "Тайський суп з креветками",
+      "ru": "Тайский суп с креветками",
+      "en": "Thai Soup with Shrimp",
+      "vn": "Súp Thái (tôm)",
+      "zh": "泰式虾汤"
+    },
+    "image": "ZUPA_PO_TAJSKU_Z_KREWETKAMI.png",
+    "menu": "soups",
+    "desc": "descriptions.json[SOUP_THAI_SHRIMP]",
+    "price": "26 zł"
+  },
+  "SOUP_SHRIMP_CHINESE": {
+    "name": {
+      "pl": "Zupa krewetkowa po chińsku",
+      "ua": "Китайський креветковий суп",
+      "ru": "Китайский креветочный суп",
+      "en": "Chinese Shrimp Soup",
+      "vn": "Súp tôm kiểu Trung Quốc",
+      "zh": "中式虾汤"
+    },
+    "image": "ZUPA_KREWETKOWA_PO_CHINSKU.png",
+    "menu": "soups",
+    "desc": "descriptions.json[SOUP_SHRIMP_CHINESE]",
+    "price": "26 zł"
+  },
+  "WOK_CHICKEN": {
+    "name": {
+      "pl": "Kurczak (wok)",
+      "ua": "Курка (вок)",
+      "ru": "Курица (вок)",
+      "en": "Chicken (wok)",
+      "vn": "Gà xào (wok)",
+      "zh": "锅炒鸡肉"
+    },
+    "image": "KURCZAK_SMAZONY_Z_WARZYWAMI.png",
+    "menu": "wok",
+    "desc": "descriptions.json[WOK_CHICKEN]",
+    "price": "16 zł"
+  },
+  "WOK_CHICKEN_BREADED": {
+    "name": {
+      "pl": "Kurczak w panierce (wok)",
+      "ua": "Курка в паніровці (вок)",
+      "ru": "Курица в панировке (вок)",
+      "en": "Breaded Chicken (wok)",
+      "vn": "Gà tẩm bột (wok)",
+      "zh": "裹粉鸡肉炒"
+    },
+    "image": "KURCZAK_W_CIESCIE_KOKOSOWYM.png",
+    "menu": "wok",
+    "desc": "descriptions.json[WOK_CHICKEN_BREADED]",
+    "price": "18 zł"
+  },
+  "WOK_PORK": {
+    "name": {
+      "pl": "Wieprzowina (wok)",
+      "ua": "Свинина (вок)",
+      "ru": "Свинина (вок)",
+      "en": "Pork (wok)",
+      "vn": "Thịt heo xào (wok)",
+      "zh": "锅炒猪肉"
+    },
+    "image": "WIEPRZOWINA_PO_CHINSKU.png",
+    "menu": "wok",
+    "desc": "descriptions.json[WOK_PORK]",
+    "price": "16 zł"
+  },
+  "WOK_BEEF": {
+    "name": {
+      "pl": "Wołowina (wok)",
+      "ua": "Яловичина (вок)",
+      "ru": "Говядина (вок)",
+      "en": "Beef (wok)",
+      "vn": "Thịt bò xào (wok)",
+      "zh": "锅炒牛肉"
+    },
+    "image": "WOLOWINA_PO_CHINSKU.png",
+    "menu": "wok",
+    "desc": "descriptions.json[WOK_BEEF]",
+    "price": "17 zł"
+  },
+  "WOK_MIX_MEAT": {
+    "name": {
+      "pl": "Mix mięs (wok)",
+      "ua": "Мікс мʼяс (вок)",
+      "ru": "Микс мяс (вок)",
+      "en": "Mixed Meats (wok)",
+      "vn": "Thập cẩm thịt (wok)",
+      "zh": "什锦肉炒"
+    },
+    "image": "WOLOWINA_5_SMAKOW.png",
+    "menu": "wok",
+    "desc": "descriptions.json[WOK_MIX_MEAT]",
+    "price": "19 zł"
+  },
+  "WOK_DUCK": {
+    "name": {
+      "pl": "Kaczka (wok)",
+      "ua": "Качка (вок)",
+      "ru": "Утка (вок)",
+      "en": "Duck (wok)",
+      "vn": "Vịt xào (wok)",
+      "zh": "锅炒鸭肉"
+    },
+    "image": "KACZKA_PO_SYCZUANSKU.png",
+    "menu": "wok",
+    "desc": "descriptions.json[WOK_DUCK]",
+    "price": "19 zł"
+  },
+  "WOK_SHRIMP": {
+    "name": {
+      "pl": "Krewetki (wok)",
+      "ua": "Креветки (вок)",
+      "ru": "Креветки (вок)",
+      "en": "Shrimp (wok)",
+      "vn": "Tôm xào (wok)",
+      "zh": "锅炒虾仁"
+    },
+    "image": "KREWETKI_PO_CHINSKU.png",
+    "menu": "wok",
+    "desc": "descriptions.json[WOK_SHRIMP]",
+    "price": "19 zł"
+  },
+  "WOK_CARP_BREADED": {
+    "name": {
+      "pl": "Karp w panierce (wok)",
+      "ua": "Короп у паніровці (вок)",
+      "ru": "Карп в панировке (вок)",
+      "en": "Breaded Carp (wok)",
+      "vn": "Cá chép tẩm bột (wok)",
+      "zh": "裹粉鲤鱼炒"
+    },
+    "image": "RYBA_CHRUPIACA.png",
+    "menu": "wok",
+    "desc": "descriptions.json[WOK_CARP_BREADED]",
+    "price": "19 zł"
+  },
+  "WOK_TOFU": {
+    "name": {
+      "pl": "Tofu (wok)",
+      "ua": "Тофу (вок)",
+      "ru": "Тофу (вок)",
+      "en": "Tofu (wok)",
+      "vn": "Đậu phụ (wok)",
+      "zh": "锅炒豆腐"
+    },
+    "image": "TOFU_Z_WARZYWAMI.png",
+    "menu": "wok",
+    "desc": "descriptions.json[WOK_TOFU]",
+    "price": "15 zł"
+  },
+  "WOK_MIX_VEG": {
+    "name": {
+      "pl": "Mix warzyw (wok)",
+      "ua": "Мікс овочів (вок)",
+      "ru": "Микс овощей (вок)",
+      "en": "Mixed Vegetables (wok)",
+      "vn": "Rau thập cẩm (wok)",
+      "zh": "什锦蔬菜炒"
+    },
+    "image": "MIX_WARZYW_SMAZONY.png",
+    "menu": "wok",
+    "desc": "descriptions.json[WOK_MIX_VEG]",
+    "price": "15 zł"
+  },
+  "SALAD_CHICKEN_GRILLED": {
+    "name": {
+      "pl": "Kurczak grillowany (sałata)",
+      "ua": "Курка гриль (салат)",
+      "ru": "Курица гриль (салат)",
+      "en": "Grilled Chicken Salad",
+      "vn": "Salad gà nướng",
+      "zh": "烤鸡沙拉"
+    },
+    "image": "KURCZAK_GRILLOWANY.png",
+    "menu": "salads",
+    "desc": "descriptions.json[SALAD_CHICKEN_GRILLED]",
+    "price": "15 zł"
+  },
+  "SALAD_CHICKEN_FRIED": {
+    "name": {
+      "pl": "Kurczak smażony (sałata)",
+      "ua": "Курка смажена (салат)",
+      "ru": "Курица жареная (салат)",
+      "en": "Fried Chicken Salad",
+      "vn": "Salad gà chiên",
+      "zh": "炸鸡沙拉"
+    },
+    "image": "KURCZAK_SMAZONY_Z_WARZYWAMI.png",
+    "menu": "salads",
+    "desc": "descriptions.json[SALAD_CHICKEN_FRIED]",
+    "price": "15 zł"
+  },
+  "SALAD_CHICKEN_BREADED": {
+    "name": {
+      "pl": "Kurczak w panierce (sałata)",
+      "ua": "Курка в паніровці (салат)",
+      "ru": "Курица в панировке (салат)",
+      "en": "Breaded Chicken Salad",
+      "vn": "Salad gà tẩm bột",
+      "zh": "裹粉鸡沙拉"
+    },
+    "image": "KURCZAK_CHRUPIACY.png",
+    "menu": "salads",
+    "desc": "descriptions.json[SALAD_CHICKEN_BREADED]",
+    "price": "17 zł"
+  },
+  "SALAD_BEEF_FRIED": {
+    "name": {
+      "pl": "Wołowina smażona (sałata)",
+      "ua": "Яловичина смажена (салат)",
+      "ru": "Говядина жареная (салат)",
+      "en": "Fried Beef Salad",
+      "vn": "Salad bò xào",
+      "zh": "炒牛肉沙拉"
+    },
+    "image": "WOLOWINA_PO_CHINSKU.png",
+    "menu": "salads",
+    "desc": "descriptions.json[SALAD_BEEF_FRIED]",
+    "price": "19 zł"
+  },
+  "SALAD_CARP_BREADED": {
+    "name": {
+      "pl": "Karp w panierce (sałata)",
+      "ua": "Короп у паніровці (салат)",
+      "ru": "Карп в панировке (салат)",
+      "en": "Breaded Carp Salad",
+      "vn": "Salad cá chép tẩm bột",
+      "zh": "裹粉鲤鱼沙拉"
+    },
+    "image": "RYBA_CHRUPIACA.png",
+    "menu": "salads",
+    "desc": "descriptions.json[SALAD_CARP_BREADED]",
+    "price": "19 zł"
+  },
+  "SALAD_SHRIMP": {
+    "name": {
+      "pl": "Krewetki (sałata)",
+      "ua": "Креветки (салат)",
+      "ru": "Креветки (салат)",
+      "en": "Shrimp Salad",
+      "vn": "Salad tôm",
+      "zh": "虾仁沙拉"
+    },
+    "image": "KREWETKI_5_SMAKOW.png",
+    "menu": "salads",
+    "desc": "descriptions.json[SALAD_SHRIMP]",
+    "price": "19 zł"
+  },
+  "SALAD_SPRINGROLLS": {
+    "name": {
+      "pl": "Sajgonki (3 szt.) (sałata)",
+      "ua": "Спринг-ролли (3 шт.) (салат)",
+      "ru": "Спринг-роллы (3 шт.) (салат)",
+      "en": "Spring Rolls (3 pcs) Salad",
+      "vn": "Salad chả giò (3 cái)",
+      "zh": "春卷（3个）沙拉"
+    },
+    "image": "SAJGONKI_WEGETARIANSKIE.png",
+    "menu": "salads",
+    "desc": "descriptions.json[SALAD_SPRINGROLLS]",
+    "price": "15 zł"
+  },
+  "SALAD_MEAT_OR_VEG": {
+    "name": {
+      "pl": "Mięsne / wegetariańskie (sałata)",
+      "ua": "Мʼясні / вегетаріанські (салат)",
+      "ru": "Мясные / вегетарианские (салат)",
+      "en": "Meat / Vegetarian (salad)",
+      "vn": "Thịt / chay (salad)",
+      "zh": "荤/素（沙拉）"
+    },
+    "image": "SAJGONKI_WIEPRZOWE_3_SZT.png",
+    "menu": "salads",
+    "desc": "descriptions.json[SALAD_MEAT_OR_VEG]",
+    "price": "17 zł"
+  },
+  "SALAD_CRAB": {
+    "name": {
+      "pl": "Krabowe (sałata)",
+      "ua": "Крабові (салат)",
+      "ru": "Крабовые (салат)",
+      "en": "Crab (salad)",
+      "vn": "Salad cua",
+      "zh": "蟹肉沙拉"
+    },
+    "image": "SALAD_CRAB.png",
+    "menu": "salads",
+    "desc": "descriptions.json[SALAD_CRAB]",
+    "price": "15 zł"
+  },
+  "SET_CHICKEN_GRILLED": {
+    "name": {
+      "pl": "Kurczak grillowany (zestaw)",
+      "ua": "Курка гриль (сет)",
+      "ru": "Курица гриль (сет)",
+      "en": "Grilled Chicken Set",
+      "vn": "Cơm gà nướng",
+      "zh": "烤鸡套餐"
+    },
+    "image": "SET_CHICKEN_GRILLED.png",
+    "menu": "sets",
+    "desc": "descriptions.json[SET_CHICKEN_GRILLED]",
+    "price": "13 zł"
+  },
+  "SET_CHICKEN_BREADED": {
+    "name": {
+      "pl": "Kurczak w panierce (zestaw)",
+      "ua": "Курка в паніровці (сет)",
+      "ru": "Курица в панировке (сет)",
+      "en": "Breaded Chicken Set",
+      "vn": "Cơm gà tẩm bột",
+      "zh": "裹粉鸡套餐"
+    },
+    "image": "SET_CHICKEN_BREADED.png",
+    "menu": "sets",
+    "desc": "descriptions.json[SET_CHICKEN_BREADED]",
+    "price": "14 zł"
+  },
+  "SET_SPRINGROLLS": {
+    "name": {
+      "pl": "Sajgonki (zestaw)",
+      "ua": "Спринг-ролли (сет)",
+      "ru": "Спринг-роллы (сет)",
+      "en": "Spring Rolls Set",
+      "vn": "Cơm chả giò",
+      "zh": "春卷套餐"
+    },
+    "image": "SAJGONKI_Z_SUROWKA_I_RYZEM.png",
+    "menu": "sets",
+    "desc": "descriptions.json[SET_SPRINGROLLS]",
+    "price": "14 zł"
+  },
+  "SET_BEEF": {
+    "name": {
+      "pl": "Wołowina smażona (zestaw)",
+      "ua": "Яловичина смажена (сет)",
+      "ru": "Говядина жареная (сет)",
+      "en": "Fried Beef Set",
+      "vn": "Cơm bò xào",
+      "zh": "炒牛肉套餐"
+    },
+    "image": "WOLOWINA_PO_CHINSKU.png",
+    "menu": "sets",
+    "desc": "descriptions.json[SET_BEEF]",
+    "price": "17 zł"
+  },
+  "SET_MIX_MEAT": {
+    "name": {
+      "pl": "Mix mięs (zestaw)",
+      "ua": "Мікс мʼяс (сет)",
+      "ru": "Микс мяс (сет)",
+      "en": "Mixed Meats Set",
+      "vn": "Cơm thập cẩm thịt",
+      "zh": "什锦肉套餐"
+    },
+    "image": "WOLOWINA_5_SMAKOW.png",
+    "menu": "sets",
+    "desc": "descriptions.json[SET_MIX_MEAT]",
+    "price": "18 zł"
+  },
+  "SET_DUCK": {
+    "name": {
+      "pl": "Kaczka (zestaw)",
+      "ua": "Качка (сет)",
+      "ru": "Утка (сет)",
+      "en": "Duck Set",
+      "vn": "Cơm vịt",
+      "zh": "鸭肉套餐"
+    },
+    "image": "RYZ_SMAZONY_Z_KACZKA.png",
+    "menu": "sets",
+    "desc": "descriptions.json[SET_DUCK]",
+    "price": "19 zł"
+  },
+  "SET_SHRIMP_BREADED": {
+    "name": {
+      "pl": "Krewetki w panierce (zestaw)",
+      "ua": "Креветки в паніровці (сет)",
+      "ru": "Креветки в панировке (сет)",
+      "en": "Breaded Shrimp Set",
+      "vn": "Cơm tôm tẩm bột",
+      "zh": "裹粉虾套餐"
+    },
+    "image": "KREWETKI_W_SOSIE_CURRY.png",
+    "menu": "sets",
+    "desc": "descriptions.json[SET_SHRIMP_BREADED]",
+    "price": "19 zł"
+  },
+  "SET_VEG": {
+    "name": {
+      "pl": "Wegetariański (zestaw)",
+      "ua": "Вегетаріанський (сет)",
+      "ru": "Вегетарианский (сет)",
+      "en": "Vegetarian Set",
+      "vn": "Cơm chay",
+      "zh": "素食套餐"
+    },
+    "image": "MIX_WARZYW_SMAZONY.png",
+    "menu": "sets",
+    "desc": "descriptions.json[SET_VEG]",
+    "price": "14 zł"
+  },
+  "SNACK_SHRIMP_BREADED_3": {
+    "name": {
+      "pl": "Krewetki w panierce (3 szt.)",
+      "ua": "Креветки в паніровці (3 шт.)",
+      "ru": "Креветки в панировке (3 шт.)",
+      "en": "Breaded Shrimp (3 pcs)",
+      "vn": "Tôm tẩm bột (3 cái)",
+      "zh": "裹粉虾（3个）"
+    },
+    "image": "KREWETKI_W_SOSIE_CURRY.png",
+    "menu": "snacks",
+    "desc": "descriptions.json[SNACK_SHRIMP_BREADED_3]",
+    "price": "9 zł"
+  },
+  "SNACK_CHICKEN_BREADED_3": {
+    "name": {
+      "pl": "Kurczak w panierce (3 szt.)",
+      "ua": "Курка в паніровці (3 шт.)",
+      "ru": "Курица в панировке (3 шт.)",
+      "en": "Breaded Chicken (3 pcs)",
+      "vn": "Gà tẩm bột (3 cái)",
+      "zh": "裹粉鸡（3个）"
+    },
+    "image": "KURCZAK_W_CIESCIE_KOKOSOWYM.png",
+    "menu": "snacks",
+    "desc": "descriptions.json[SNACK_CHICKEN_BREADED_3]",
+    "price": "8 zł"
+  },
+  "SNACK_WONTON_3": {
+    "name": {
+      "pl": "Pierożki won-ton (3 szt.)",
+      "ua": "Пельмені вонтон (3 шт.)",
+      "ru": "Пельмени вонтон (3 шт.)",
+      "en": "Wonton (3 pcs)",
+      "vn": "Hoành thánh (3 cái)",
+      "zh": "云吞（3个）"
+    },
+    "image": "ZUPA_WONTON.png",
+    "menu": "snacks",
+    "desc": "descriptions.json[SNACK_WONTON_3]",
+    "price": "8 zł"
+  },
+  "SNACK_SPRING_CABBAGE_3": {
+    "name": {
+      "pl": "Sajgonki z kapusty (3 szt.)",
+      "ua": "Спринг-ролли з капустою (3 шт.)",
+      "ru": "Спринг-роллы с капустой (3 шт.)",
+      "en": "Cabbage Spring Rolls (3 pcs)",
+      "vn": "Chả giò bắp cải (3 cái)",
+      "zh": "卷心菜春卷（3个）"
+    },
+    "image": "SAJGONKI_WEGETARIANSKIE.png",
+    "menu": "snacks",
+    "desc": "descriptions.json[SNACK_SPRING_CABBAGE_3]",
+    "price": "7 zł"
+  },
+  "SNACK_SPRING_MEAT_3": {
+    "name": {
+      "pl": "Sajgonki mięsne (3 szt.)",
+      "ua": "Спринг-ролли мʼясні (3 шт.)",
+      "ru": "Спринг-роллы мясные (3 шт.)",
+      "en": "Meat Spring Rolls (3 pcs)",
+      "vn": "Chả giò thịt (3 cái)",
+      "zh": "肉春卷（3个）"
+    },
+    "image": "SAJGONKI_WIEPRZOWE_3_SZT.png",
+    "menu": "snacks",
+    "desc": "descriptions.json[SNACK_SPRING_MEAT_3]",
+    "price": "7 zł"
+  },
+  "SNACK_TOFU": {
+    "name": {
+      "pl": "Tofu (przekąska)",
+      "ua": "Тофу (закуска)",
+      "ru": "Тофу (закуска)",
+      "en": "Tofu (snack)",
+      "vn": "Đậu phụ (ăn vặt)",
+      "zh": "豆腐（小吃）"
+    },
+    "image": "TOFU_Z_WARZYWAMI.png",
+    "menu": "snacks",
+    "desc": "descriptions.json[SNACK_TOFU]",
+    "price": "6 zł"
+  },
+  "DESSERT_BANANA": {
+    "name": {
+      "pl": "Banan w cieście",
+      "ua": "Банан у клярі",
+      "ru": "Банан в кляре",
+      "en": "Banana Fritter",
+      "vn": "Chuối chiên",
+      "zh": "炸香蕉"
+    },
+    "image": "DESSERT_BANANA.png",
+    "menu": "desserts",
+    "desc": "descriptions.json[DESSERT_BANANA]",
+    "price": "6 zł"
+  },
+  "DESSERT_PINEAPPLE": {
+    "name": {
+      "pl": "Ananas w cieście",
+      "ua": "Ананас у клярі",
+      "ru": "Ананас в кляре",
+      "en": "Pineapple Fritter",
+      "vn": "Dứa chiên",
+      "zh": "炸菠萝"
+    },
+    "image": "DESSERT_PINEAPPLE.png",
+    "menu": "desserts",
+    "desc": "descriptions.json[DESSERT_PINEAPPLE]",
+    "price": "6 zł"
+  },
+  "DRINK_ASIAN": {
+    "name": {
+      "pl": "Sok azjatycki",
+      "ua": "Азіатський напій",
+      "ru": "Азиатский напиток",
+      "en": "Asian Drink",
+      "vn": "Nước uống châu Á",
+      "zh": "亚洲饮料"
+    },
+    "image": "DRINK_ASIAN.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_ASIAN]",
+    "price": "7 zł"
+  },
+  "DRINK_ALOES": {
+    "name": {
+      "pl": "Aloes",
+      "ua": "Алоє",
+      "ru": "Алоэ",
+      "en": "Aloe Drink",
+      "vn": "Nước lô hội",
+      "zh": "芦荟饮料"
+    },
+    "image": "ALOES.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_ALOES]",
+    "price": "7 zł"
+  },
+  "DRINK_TEA": {
+    "name": {
+      "pl": "Napój z herbaty",
+      "ua": "Чайний напій",
+      "ru": "Напиток из чая",
+      "en": "Tea Drink",
+      "vn": "Nước trà",
+      "zh": "茶饮"
+    },
+    "image": "DRINK_TEA.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_TEA]",
+    "price": "5 zł"
+  },
+  "DRINK_COLA": {
+    "name": {
+      "pl": "Coca-Cola",
+      "ua": "Кока-Кола",
+      "ru": "Кока-Кола",
+      "en": "Coca-Cola",
+      "vn": "Coca-Cola",
+      "zh": "可口可乐"
+    },
+    "image": "COLA_0_5L.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_COLA]",
+    "price": "5 zł"
+  },
+  "DRINK_FANTA": {
+    "name": {
+      "pl": "Fanta",
+      "ua": "Фанта",
+      "ru": "Фанта",
+      "en": "Fanta",
+      "vn": "Fanta",
+      "zh": "芬达"
+    },
+    "image": "FANTA_0_5L.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_FANTA]",
+    "price": "5 zł"
+  },
+  "DRINK_SPRITE": {
+    "name": {
+      "pl": "Sprite",
+      "ua": "Спрайт",
+      "ru": "Спрайт",
+      "en": "Sprite",
+      "vn": "Sprite",
+      "zh": "雪碧"
+    },
+    "image": "SPRITE_0_5L.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_SPRITE]",
+    "price": "5 zł"
+  },
+  "DRINK_KINLEY": {
+    "name": {
+      "pl": "Kinley",
+      "ua": "Кінлі",
+      "ru": "Кинли",
+      "en": "Kinley",
+      "vn": "Kinley",
+      "zh": "琴尼利"
+    },
+    "image": "DRINK_KINLEY.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_KINLEY]",
+    "price": "5 zł"
+  },
+  "DRINK_KROPLA_BESKIDU": {
+    "name": {
+      "pl": "Kropla Beskidu",
+      "ua": "Кропля Бескіду",
+      "ru": "Кропля Бескиду",
+      "en": "Kropla Beskidu",
+      "vn": "Kropla Beskidu",
+      "zh": "贝斯基杜之滴"
+    },
+    "image": "WODA_0_3L.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_KROPLA_BESKIDU]",
+    "price": "5 zł"
+  },
+  "DRINK_CAPPY": {
+    "name": {
+      "pl": "Cappy",
+      "ua": "Cappy",
+      "ru": "Cappy",
+      "en": "Cappy",
+      "vn": "Cappy",
+      "zh": "Cappy"
+    },
+    "image": "DRINK_CAPPY.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_CAPPY]",
+    "price": "5 zł"
+  },
+  "DRINK_FUZETEA": {
+    "name": {
+      "pl": "Fuzetea",
+      "ua": "Fuzetea",
+      "ru": "Fuzetea",
+      "en": "Fuzetea",
+      "vn": "Fuzetea",
+      "zh": "Fuzetea"
+    },
+    "image": "DRINK_FUZETEA.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_FUZETEA]",
+    "price": "5 zł"
+  },
+  "DRINK_BURN": {
+    "name": {
+      "pl": "Burn",
+      "ua": "Burn",
+      "ru": "Burn",
+      "en": "Burn",
+      "vn": "Burn",
+      "zh": "Burn"
+    },
+    "image": "DRINK_BURN.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[DRINK_BURN]",
+    "price": "7 zł"
+  },
+  "TEA_BLACK": {
+    "name": {
+      "pl": "Herbata czarna",
+      "ua": "Чорний чай",
+      "ru": "Чёрный чай",
+      "en": "Black Tea",
+      "vn": "Trà đen",
+      "zh": "红茶"
+    },
+    "image": "TEA_BLACK.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[TEA_BLACK]",
+    "price": "4 zł"
+  },
+  "TEA_VARIANTS": {
+    "name": {
+      "pl": "Herbata jaśminowa / ryżowa / zielona",
+      "ua": "Чай жасминовий / рисовий / зелений",
+      "ru": "Чай жасминовый / рисовый / зелёный",
+      "en": "Jasmine / Rice / Green Tea",
+      "vn": "Trà nhài / gạo / xanh",
+      "zh": "茉莉 / 米香 / 绿茶"
+    },
+    "image": "TEA_VARIANTS.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[TEA_VARIANTS]",
+    "price": "5 zł"
+  },
+  "COFFEE_VIETNAMESE": {
+    "name": {
+      "pl": "Kawa wietnamska",
+      "ua": "Вʼєтнамська кава",
+      "ru": "Вьетнамский кофе",
+      "en": "Vietnamese Coffee",
+      "vn": "Cà phê Việt Nam",
+      "zh": "越南咖啡"
+    },
+    "image": "COFFEE_VIETNAMESE.png",
+    "menu": "drinks",
+    "desc": "descriptions.json[COFFEE_VIETNAMESE]",
+    "price": "7 zł"
+  }
+}
