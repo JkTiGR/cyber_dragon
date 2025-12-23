@@ -1244,3 +1244,120 @@ body.hero-closed .hero{
   font-weight:900;
   font-size:1.05rem;
 }
+
+
+/* =========================================================
+   CYBER DRAGON — FINAL PATCH
+   - hero НЕ исчезает в body.island
+   - 1:1 thumbnails включая featured
+   - Premium tap (.tap-pop)
+   - Liquid reflection: featured (--liq-x/--liq-y)
+   - Liquid reflection: dock (--dock-liq-x)
+   ========================================================= */
+
+:root{
+  --shineA: rgba(79,211,255,.55);
+  --shineB: rgba(143,0,255,.55);
+}
+
+/* ✅ hero НЕ исчезает в body.island */
+body.island .hero{
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  pointer-events: auto !important;
+  max-height: none !important;
+  margin: 10px 0 20px !important;
+}
+
+/* ✅ все изображения 1:1 (включая featured) */
+.card.featured .thumb{
+  aspect-ratio: 1 / 1 !important;
+}
+
+/* ✅ Premium tap: scale + blur (класс .tap-pop) */
+.card{
+  will-change: transform, filter;
+  transition: transform .22s cubic-bezier(.16,.84,.44,1), filter .22s ease;
+}
+.card.tap-pop{
+  transform: scale(.985);
+  filter: blur(.35px) saturate(1.08) contrast(1.05);
+}
+
+/* ✅ Liquid reflection для featured (живёт от --liq-x / --liq-y) */
+.card.featured{
+  --liq-x: 0px;
+  --liq-y: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.card.featured::after{
+  content:"";
+  position:absolute;
+  width: 260px;
+  height: 260px;
+  left: 50%;
+  top: 50%;
+  transform: translate(calc(-50% + var(--liq-x)), calc(-50% + var(--liq-y)));
+  border-radius: 999px;
+  pointer-events:none;
+  background:
+    conic-gradient(from 180deg,
+      rgba(255,0,170,0),
+      rgba(120,200,255,.55),
+      rgba(255,150,0,.45),
+      rgba(0,255,210,.32),
+      rgba(255,0,170,0)
+    );
+  filter: blur(18px) saturate(175%);
+  opacity: .55;
+  mix-blend-mode: screen;
+  transition: opacity .18s ease;
+}
+.card.featured:hover::after,
+.card.featured:active::after{ opacity: .75; }
+
+.card.featured::before{
+  content:"";
+  position:absolute;
+  left: 12px;
+  right: 12px;
+  top: 10px;
+  height: 20px;
+  border-radius: 999px;
+  pointer-events:none;
+  background: radial-gradient(closest-side, rgba(255,255,255,.26), rgba(255,255,255,0));
+  opacity:.55;
+}
+
+/* ✅ Liquid reflection для dock (живёт от --dock-liq-x) */
+.dock{
+  --dock-liq-x: 0px;
+  position: fixed;
+  overflow: hidden;
+}
+.dock::after{
+  content:"";
+  position:absolute;
+  top: -50px;
+  left: -120px;
+  width: 360px;
+  height: 220px;
+  transform: translateX(var(--dock-liq-x));
+  pointer-events:none;
+  background:
+    conic-gradient(from 180deg,
+      rgba(255,0,170,0),
+      rgba(120,200,255,.45),
+      rgba(255,150,0,.35),
+      rgba(0,255,210,.26),
+      rgba(255,0,170,0)
+    );
+  filter: blur(18px) saturate(165%);
+  opacity: .42;
+  mix-blend-mode: screen;
+  transition: opacity .18s ease;
+}
+.dock.is-touching::after{ opacity: .60; }
+

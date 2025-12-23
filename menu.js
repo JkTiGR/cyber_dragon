@@ -1347,3 +1347,264 @@ const menuData = {
   for (const k of Object.keys(menuData)) delete menuData[k];
   for (const k of Object.keys(out)) menuData[k] = out[k];
 })();
+
+/* =========================================================
+   ✅ GLOBAL INGREDIENT OPTIONS + CUSTOM BASE FOR "Собери сам"
+   - Protein REQUIRED, max 2
+   - Sauces REQUIRED, max 2
+   - Veggies optional, max 4
+   - Addons optional, max 3
+   - Coffee options for drinks (ice / condensed milk / sugar)
+   - "Собери сам" gets: is_custom_builder=true, custom_base=<category>
+   ========================================================= */
+(function(){
+  const CAT_BASE_RU = {
+    pho_soups: "Фо (суп)",
+    bun_soups: "Бун (суп)",
+    cold_bun: "Холодный Бун",
+    bun_bo_hue: "Бун Бо Хюэ",
+    bun_cha_ca: "Бун Ча Ка",
+    mien_soups: "Миен (суп)",
+    mi_soups: "Ми (суп)",
+    wok_fried_pho: "ВОК: жареный Фо",
+    wok_fried_mien: "ВОК: жареный Миен",
+    wok_fried_mi: "ВОК: жареная лапша",
+    rice_braised: "Рис: тушёные",
+    fried_rice: "Рис: жареный",
+    appetizers: "Закуски",
+    drinks: "Напитки",
+    top: "TOP"
+  };
+
+  const FOOD_INGREDIENTS = [
+    {
+      id: "protein",
+      title: { ru:"Белок", ua:"Білок", en:"Protein", vn:"Đạm", pl:"Białko", de:"Protein", zh:"蛋白" },
+      required: true,
+      multi: true,
+      max: 2,
+      items: [
+        { id:"chicken_50",  label:{ru:"Курица 50г",  vn:"Gà 50g"},  price_delta: 7 },
+        { id:"chicken_100", label:{ru:"Курица 100г", vn:"Gà 100g"}, price_delta: 14 },
+        { id:"chicken_150", label:{ru:"Курица 150г", vn:"Gà 150g"}, price_delta: 21 },
+
+        { id:"pork_50",  label:{ru:"Свинина 50г",  vn:"Heo 50g"},  price_delta: 7 },
+        { id:"pork_100", label:{ru:"Свинина 100г", vn:"Heo 100g"}, price_delta: 14 },
+        { id:"pork_150", label:{ru:"Свинина 150г", vn:"Heo 150g"}, price_delta: 21 },
+
+        { id:"beef_50",  label:{ru:"Говядина 50г",  vn:"Bò 50g"},  price_delta: 8 },
+        { id:"beef_100", label:{ru:"Говядина 100г", vn:"Bò 100g"}, price_delta: 16 },
+        { id:"beef_150", label:{ru:"Говядина 150г", vn:"Bò 150g"}, price_delta: 24 },
+
+        { id:"tofu_50",  label:{ru:"Тофу 50г",  vn:"Đậu phụ 50g"},  price_delta: 6 },
+        { id:"tofu_100", label:{ru:"Тофу 100г", vn:"Đậu phụ 100g"}, price_delta: 12 },
+        { id:"tofu_150", label:{ru:"Тофу 150г", vn:"Đậu phụ 150g"}, price_delta: 18 },
+
+        { id:"shrimp_1", label:{ru:"1 креветка (30г)", vn:"1 con tôm (30g)"}, price_delta: 6 },
+        { id:"shrimp_2", label:{ru:"2 креветки (60г)", vn:"2 con tôm (60g)"}, price_delta: 12 },
+        { id:"shrimp_4", label:{ru:"4 креветки (120г)", vn:"4 con tôm (120g)"}, price_delta: 24 },
+        { id:"shrimp_6", label:{ru:"6 креветок (180г)", vn:"6 con tôm (180g)"}, price_delta: 36 }
+      ]
+    },
+    {
+      id: "veggies",
+      title: { ru:"Овощи", ua:"Овочі", en:"Veggies", vn:"Rau", pl:"Warzywa", de:"Gemüse", zh:"蔬菜" },
+      required: false,
+      multi: true,
+      max: 4,
+      items: [
+        { id:"wok_veg", label:{ru:"овощи wok", vn:"rau xào"}, price_delta: 6 },
+        { id:"corn",    label:{ru:"кукуруза", vn:"hạt ngô"}, price_delta: 4 },
+        { id:"sprouts", label:{ru:"ростки", vn:"hạt đỗ"}, price_delta: 4 },
+        { id:"carrot",  label:{ru:"морковь", vn:"cà rốt"}, price_delta: 3 },
+        { id:"scall",   label:{ru:"зелёный лук", vn:"hành lá"}, price_delta: 3 }
+      ]
+    },
+    {
+      id: "addons",
+      title: { ru:"Добавки", ua:"Додатки", en:"Add-ons", vn:"Topping", pl:"Dodatki", de:"Extras", zh:"加料" },
+      required: false,
+      multi: true,
+      max: 3,
+      items: [
+        { id:"onion",       label:{ru:"лук", vn:"hành củ"}, price_delta: 3 },
+        { id:"fried_onion", label:{ru:"жареный лук", vn:"hành khô"}, price_delta: 4 },
+        { id:"peanut",      label:{ru:"арахис", vn:"hạt lạc"}, price_delta: 5 }
+      ]
+    },
+    {
+      id: "sauces",
+      title: { ru:"Соусы", ua:"Соуси", en:"Sauces", vn:"Nước chấm", pl:"Sosy", de:"Saucen", zh:"酱汁" },
+      required: true,
+      multi: true,
+      max: 2,
+      items: [
+        { id:"sweet_sour", label:{ru:"кисло-сладкий", vn:"chua ngọt"}, price_delta: 3 },
+        { id:"fish",       label:{ru:"рыбный соус", vn:"nước mắm"}, price_delta: 3 },
+        { id:"soy",        label:{ru:"соевый соус", vn:"xì dầu"}, price_delta: 2 },
+        { id:"chili",      label:{ru:"острый перец", vn:"ớt cay"}, price_delta: 2 },
+        { id:"nem",        label:{ru:"соус для nem", vn:"nước mắm nem"}, price_delta: 3 }
+      ]
+    }
+  ];
+
+  const COFFEE_OPTIONS = [
+    {
+      id: "ice",
+      title: { ru:"Лёд", ua:"Лід", en:"Ice", vn:"Đá", pl:"Lód", de:"Eis", zh:"冰" },
+      required: false,
+      multi: false,
+      items: [
+        { id:"no_ice", label:{ru:"Без льда", vn:"Không đá"}, price_delta: 0 },
+        { id:"ice",    label:{ru:"Со льдом", vn:"Có đá"}, price_delta: 0 }
+      ]
+    },
+    {
+      id: "milk",
+      title: { ru:"Молоко", ua:"Молоко", en:"Milk", vn:"Sữa", pl:"Mleko", de:"Milch", zh:"奶" },
+      required: false,
+      multi: false,
+      items: [
+        { id:"no_milk", label:{ru:"Без", vn:"Không"}, price_delta: 0 },
+        { id:"cond",    label:{ru:"Сгущённое", vn:"Sữa đặc"}, price_delta: 5 }
+      ]
+    },
+    {
+      id: "sugar",
+      title: { ru:"Сахар", ua:"Цукор", en:"Sugar", vn:"Đường", pl:"Cukier", de:"Zucker", zh:"糖" },
+      required: false,
+      multi: false,
+      items: [
+        { id:"0", label:{ru:"0%", vn:"0%"}, price_delta: 0 },
+        { id:"25", label:{ru:"25%", vn:"25%"}, price_delta: 0 },
+        { id:"50", label:{ru:"50%", vn:"50%"}, price_delta: 0 },
+        { id:"75", label:{ru:"75%", vn:"75%"}, price_delta: 0 },
+        { id:"100", label:{ru:"100%", vn:"100%"}, price_delta: 0 }
+      ]
+    }
+  ];
+
+  const deepClone = (o) => JSON.parse(JSON.stringify(o));
+
+  function ensureOptionGroup(item, group){
+    if (!item.options) item.options = [];
+    const exists = item.options.some(g => g && g.id === group.id);
+    if (!exists) item.options.push(deepClone(group));
+  }
+
+  function applyFoodIngredientsToItem(item){
+    FOOD_INGREDIENTS.forEach(g => ensureOptionGroup(item, g));
+  }
+
+  function applyCoffeeOptionsToItem(item){
+    if (!item.options) item.options = [];
+    COFFEE_OPTIONS.forEach(g => ensureOptionGroup(item, g));
+  }
+
+  function makeBuilderItem(catKey){
+    const base = CAT_BASE_RU[catKey] || catKey;
+
+    const META = {
+      pho_soups:   { id:"custom_pho_soups",   key:"custom_pho_soups",   name_ru:"Собери сам Фо (супы)",        image:"images/build/build_pho_soup.png" },
+      bun_soups:   { id:"custom_bun_soups",   key:"custom_bun_soups",   name_ru:"Собери сам Бун (супы)",       image:"images/build/build_bun_soup.png" },
+      cold_bun:    { id:"custom_cold_bun",    key:"custom_cold_bun",    name_ru:"Собери сам Холодный Бун",     image:"images/build/build_cold_bun.png" },
+      bun_bo_hue:  { id:"custom_bun_bo_hue",  key:"custom_bun_bo_hue",  name_ru:"Собери сам Бун Бо Хюэ",       image:"images/build/build_bun_bo_hue.png" },
+      bun_cha_ca:  { id:"custom_bun_cha_ca",  key:"custom_bun_cha_ca",  name_ru:"Собери сам Бун Ча Ка",        image:"images/build/build_bun_cha_ca.png" },
+      mien_soups:  { id:"custom_mien_soups",  key:"custom_mien_soups",  name_ru:"Собери сам Миен (супы)",      image:"images/build/build_mien_soup.png" },
+      mi_soups:    { id:"custom_mi_soups",    key:"custom_mi_soups",    name_ru:"Собери сам Ми (супы)",        image:"images/build/build_mi_soup.png" },
+      wok_fried_pho:{id:"custom_wok_pho",     key:"custom_wok_pho",     name_ru:"Собери сам ВОК: жареный Фо",   image:"images/build/build_wok_pho.png" },
+      wok_fried_mien:{id:"custom_wok_mien",   key:"custom_wok_mien",    name_ru:"Собери сам ВОК: жареный Миен", image:"images/build/build_wok_mien.png" },
+      wok_fried_mi:{ id:"custom_wok_mi",      key:"custom_wok_mi",      name_ru:"Собери сам ВОК: жареная лапша",image:"images/build/build_wok_mi.png" },
+      rice_braised:{ id:"custom_rice_braised",key:"custom_rice_braised",name_ru:"Собери сам Рис: тушёные",      image:"images/build/build_rice_braised.png" },
+      fried_rice:  { id:"custom_fried_rice",  key:"custom_fried_rice",  name_ru:"Собери сам Рис: жареный",      image:"images/build/build_fried_rice.png" },
+      appetizers:  { id:"custom_spring_roll", key:"custom_spring_roll", name_ru:"Собери сам spring roll",       image:"images/build/build_spring_roll.png", base_override:"Spring roll" }
+    };
+
+    const meta = META[catKey] || { id:`custom_${catKey}`, key:`custom_${catKey}`, name_ru:"Собери сам", image:"images/build/build_custom.png" };
+    const baseForThis = meta.base_override || base;
+
+    return {
+      id: meta.id,
+      key: meta.key,
+      name: meta.name_ru,
+      image: meta.image,
+      price: 0,
+      weight: 0,
+      spicy: 0,
+      tags: ["custom","featured"],
+      custom: true,
+      is_custom_builder: true,
+      custom_base: baseForThis,
+      base: baseForThis,
+      translations: {
+        ru: meta.name_ru,
+        ua: meta.name_ru,   // если захочешь — позже добавим нормальные переводы
+        en: "Build your own",
+        vn: "Tự chọn",
+        pl: "Złóż sam",
+        de: "Stell dir zusammen",
+        zh: "自选"
+      },
+      short: `База: ${baseForThis}`
+    };
+  }
+
+  function ensureTopCategory(){
+    if (menuData.top) return;
+    // Try to find Vietnamese coffee in drinks
+    let coffee = null;
+    try{
+      const d = menuData.drinks || [];
+      coffee = d.find(x => (x.key && String(x.key).toLowerCase().includes("caphe")) ||
+                           (x.image && String(x.image).toLowerCase().includes("caphe")) ||
+                           (x.translations && x.translations.ru && String(x.translations.ru).toLowerCase().includes("кава")));
+    }catch(_){}
+    menuData.top = [];
+    if (coffee) menuData.top.push(coffee);
+  }
+
+  function injectBuildersPerCategory(){
+    const foodCats = Object.keys(menuData).filter(k => k !== "drinks" && k !== "top");
+    foodCats.forEach(k => {
+      const arr = menuData[k];
+      if (!Array.isArray(arr) || arr.length === 0) return;
+
+      // if first already builder, ensure fields and base
+      const first = arr[0];
+      if (first && first.is_custom_builder){
+        first.custom_base = first.custom_base || (CAT_BASE_RU[k] || k);
+        return;
+      }
+      const builder = makeBuilderItem(k);
+      // add ingredient groups to builder too
+      applyFoodIngredientsToItem(builder);
+      arr.unshift(builder);
+    });
+  }
+
+  function applyIngredientsEverywhere(){
+    for (const [catKey, arr] of Object.entries(menuData)){
+      if (!Array.isArray(arr)) continue;
+
+      arr.forEach(item => {
+        if (!item || typeof item !== "object") return;
+
+        // Mark builder items with base
+        if (item.is_custom_builder){
+          item.custom_base = item.custom_base || (CAT_BASE_RU[catKey] || catKey);
+        }
+
+        if (catKey === "drinks" || (item.tags || []).includes("drink")){
+          applyCoffeeOptionsToItem(item);
+        } else {
+          applyFoodIngredientsToItem(item);
+        }
+      });
+    }
+  }
+
+  // Do it
+  ensureTopCategory();
+  injectBuildersPerCategory();
+  applyIngredientsEverywhere();
+})();

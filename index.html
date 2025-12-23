@@ -61,13 +61,6 @@
         preload="auto"
       ></video>
 
-      <button
-        class="dock-btn hero-menu"
-        id="heroAllCats"
-        aria-haspopup="dialog"
-        aria-controls="catSheet"
-        title="Категории"
-      >
         MENU
       </button>
       <div class="social">
@@ -84,7 +77,7 @@
           <img src="images/icon/tt.png" alt="TikTok">
         </a>
       </div>
-      <button class="hero-close" id="heroClose" aria-label="Hide promo">✕</button>
+      
     </div>
 
     <!-- Category pills -->
@@ -164,9 +157,7 @@
       <button class="sheet-close" id="sheetClose" aria-label="Закрыть">✕</button>
       <h3 id="sheetTitle">Ваш заказ</h3>
 
-      <div class="cart-lines" id="cartLines">
-        <div class="muted">Корзина пуста.</div>
-      </div>
+      <div class="cart-lines" id="cartLines"></div>
 
       <div class="section">
         <div class="muted" id="orderTypeTitle" style="margin-bottom:6px">Тип заказа</div>
@@ -438,7 +429,27 @@
       }
       return parts.join(' · ');
     }
-    function buildThumb(imgEl, key){
+    
+    function summarizeSelectionsLines(it, selections){
+      const opts = normalizeOptions(it);
+      const sel = selections || {};
+      const lines = [];
+      for (const g of opts){
+        const gid = g.id || g.key || g.name || '';
+        const picked = sel[gid];
+        if (!picked) continue;
+        const pickArr = Array.isArray(picked) ? picked : [picked];
+        const names = pickArr.map(oid=>{
+          const item = (g.items||[]).find(x => (x.id||x.key)===oid);
+          return item?.label?.[LANG] || item?.label?.en || item?.label || item?.name || oid;
+        });
+        const gTitle = groupTitle(g) || gid;
+        lines.push(`${gTitle}: ${names.join(', ')}`);
+      }
+      return lines;
+    }
+
+function buildThumb(imgEl, key){
       let i = 0;
       const trySet = () => imgEl.src = IMG_DIR + key + '.' + IMG_EXTS[i];
       imgEl.onerror = () => {
@@ -873,13 +884,15 @@
     }
 
     function validateSelections(it, selections){
+      // User requested: allow adding even if required groups are not selected.
+      // We only enforce max limits to avoid impossible states.
       const opts = normalizeOptions(it);
       for (const g of opts){
         const gid = g.id || g.key || g.name || '';
         const picked = selections?.[gid];
-        const has = Array.isArray(picked) ? picked.length>0 : !!picked;
-        if (isRequiredGroup(g) && !has) return {ok:false, groupId: gid, title: groupTitle(g) || gid};
-        if (g.max && Array.isArray(picked) && picked.length > Number(g.max)) return {ok:false, groupId: gid, title: groupTitle(g) || gid};
+        if (g.max && Array.isArray(picked) && picked.length > Number(g.max)){
+          return {ok:false, groupId: gid, title: groupTitle(g) || gid};
+        }
       }
       return {ok:true};
     }
@@ -1414,7 +1427,15 @@
         sum += unit * qty;
 
         const extra = [optText ? `(${optText})` : '', noteText ? `[${noteText}]` : ''].filter(Boolean).join(' ');
-        lines.push(`• ${name} ${extra} — ${unit.toFixed(2)} ${CURRENCY} × ${qty}`);
+        const isCustom = (Array.isArray(it.tags) && it.tags.includes('custom')) || String(it.key||'').startsWith('custom_');
+        if (isCustom){
+          const optLines = summarizeSelectionsLines(it, entry.selections);
+          lines.push(`• ${name} — ${unit.toFixed(2)} ${CURRENCY} × ${qty}`);
+          for (const l of optLines){ lines.push(`   └ ${l}`); }
+          if (noteText) lines.push(`   └ Note: ${noteText}`);
+        } else {
+          lines.push(`• ${name} ${extra} — ${unit.toFixed(2)} ${CURRENCY} × ${qty}`);
+        }
 
         items.push({ name, price: unit, qty, key, selections: entry.selections || {}, note: noteText });
       }
@@ -1861,5 +1882,58 @@ ${lines.join('\n') || '—'}`;
     })();
     </script>
   </div>
+
+<script>
+(() => {
+  const dock = document.getElementById('dock');
+  const lens = document.getElementById('dockLens');
+  if (!dock || !lens) return;
+
+  // Кнопки могут быть <a> или <button> — берём любые кликабельные элементы
+  const items = [...dock.querySelectorAll('.dock-btn, a, button')].filter(el => el !== lens);
+
+  function getActive(){
+    return dock.querySelector('.is-active') || items[0];
+  }
+
+  function moveLensTo(el){
+    if (!el) return;
+    const rDock = dock.getBoundingClientRect();
+    const rEl = el.getBoundingClientRect();
+
+    const centerX = (rEl.left + rEl.width/2) - rDock.left;
+    const size = Math.max(108, Math.min(140, rEl.width + 54)); // чуть больше кнопки
+
+    lens.style.width = size + 'px';
+    lens.style.height = size + 'px';
+
+    const x = centerX - size/2;
+    lens.style.transform = `translate(${x}px, -50%)`;
+  }
+
+  // init
+  requestAnimationFrame(() => moveLensTo(getActive()));
+
+  // Ничего не перехватываем: просто слушаем и двигаем линзу
+  dock.addEventListener('click', (e) => {
+    const target = e.target.closest('.dock-btn, a, button');
+    if (!target || target === lens) return;
+
+    // Если у тебя уже есть логика is-active — она отработает.
+    // Если нет — аккуратно поставим is-active сами:
+    if (!dock.querySelector('.is-active')) {
+      items.forEach(x => x.classList.remove('is-active'));
+      target.classList.add('is-active');
+    }
+
+    moveLensTo(dock.querySelector('.is-active') || target);
+  }, { passive: true });
+
+  window.addEventListener('resize', () => moveLensTo(getActive()));
+})();
+</script>
+
+
+
 </body>
 </html>
