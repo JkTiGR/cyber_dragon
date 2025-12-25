@@ -1505,19 +1505,33 @@ const menuData = {
     const base = CAT_BASE_RU[catKey] || catKey;
 
     const META = {
-      pho_soups:   { id:"custom_pho_soups",   key:"custom_pho_soups",   name_ru:"Собери сам Фо (супы)",        image:"images/build/build_pho_soup.png" },
-      bun_soups:   { id:"custom_bun_soups",   key:"custom_bun_soups",   name_ru:"Собери сам Бун (супы)",       image:"images/build/build_bun_soup.png" },
-      cold_bun:    { id:"custom_cold_bun",    key:"custom_cold_bun",    name_ru:"Собери сам Холодный Бун",     image:"images/build/build_cold_bun.png" },
-      bun_bo_hue:  { id:"custom_bun_bo_hue",  key:"custom_bun_bo_hue",  name_ru:"Собери сам Бун Бо Хюэ",       image:"images/build/build_bun_bo_hue.png" },
-      bun_cha_ca:  { id:"custom_bun_cha_ca",  key:"custom_bun_cha_ca",  name_ru:"Собери сам Бун Ча Ка",        image:"images/build/build_bun_cha_ca.png" },
-      mien_soups:  { id:"custom_mien_soups",  key:"custom_mien_soups",  name_ru:"Собери сам Миен (супы)",      image:"images/build/build_mien_soup.png" },
-      mi_soups:    { id:"custom_mi_soups",    key:"custom_mi_soups",    name_ru:"Собери сам Ми (супы)",        image:"images/build/build_mi_soup.png" },
-      wok_fried_pho:{id:"custom_wok_pho",     key:"custom_wok_pho",     name_ru:"Собери сам ВОК: жареный Фо",   image:"images/build/build_wok_pho.png" },
-      wok_fried_mien:{id:"custom_wok_mien",   key:"custom_wok_mien",    name_ru:"Собери сам ВОК: жареный Миен", image:"images/build/build_wok_mien.png" },
-      wok_fried_mi:{ id:"custom_wok_mi",      key:"custom_wok_mi",      name_ru:"Собери сам ВОК: жареная лапша",image:"images/build/build_wok_mi.png" },
-      rice_braised:{ id:"custom_rice_braised",key:"custom_rice_braised",name_ru:"Собери сам Рис: тушёные",      image:"images/build/build_rice_braised.png" },
-      fried_rice:  { id:"custom_fried_rice",  key:"custom_fried_rice",  name_ru:"Собери сам Рис: жареный",      image:"images/build/build_fried_rice.png" },
-      appetizers:  { id:"custom_spring_roll", key:"custom_spring_roll", name_ru:"Собери сам spring roll",       image:"images/build/build_spring_roll.png", base_override:"Spring roll" }
+      pho_soups:   {
+      name: "Собери сам Фо (супы)", id:"custom_pho_soups",   key:"build_pho_soup",   name_ru:"Собери сам Фо (супы)",        image: "images/build_pho_soup.png" },
+      bun_soups:   {
+      name: "Собери сам Бун (супы)", id:"custom_bun_soups",   key:"build_bun_soup",   name_ru:"Собери сам Бун (супы)",       image: "images/build_bun_soup.png" },
+      cold_bun:    {
+      name: "Собери сам Холодный Бун", id:"custom_cold_bun",    key:"build_cold_bun",    name_ru:"Собери сам Холодный Бун",     image: "images/build_cold_bun.png" },
+      bun_bo_hue:  {
+      name: "Собери сам Бун Бо Хюэ", id:"custom_bun_bo_hue",  key:"build_bun_bo_hue",  name_ru:"Собери сам Бун Бо Хюэ",       image: "images/build_bun_bo_hue.png" },
+      bun_cha_ca:  {
+      name: "Собери сам Бун Ча Ка", id:"custom_bun_cha_ca",  key:"build_bun_cha_ca",  name_ru:"Собери сам Бун Ча Ка",        image: "images/build_bun_cha_ca.png" },
+      mien_soups:  {
+      name: "Собери сам Миен (супы)", id:"custom_mien_soups",  key:"build_mien_soup",  name_ru:"Собери сам Миен (супы)",      image: "images/build_mien_soup.png" },
+      mi_soups:    {
+      name: "Собери сам Ми (супы)", id:"custom_mi_soups",    key:"build_mi_soup",    name_ru:"Собери сам Ми (супы)",        image: "images/build_mi_soup.png" },
+      wok_fried_pho:{
+      name: "Собери сам ВОК: жареный Фо",id:"custom_wok_pho",     key:"build_wok_pho",     name_ru:"Собери сам ВОК: жареный Фо",   image: "images/build_wok_pho.png" },
+      wok_fried_mien:{
+      name: "Собери сам ВОК: жареный Миен",id:"custom_wok_mien",   key:"build_wok_mien",    name_ru:"Собери сам ВОК: жареный Миен", image: "images/build_wok_mien.png" },
+      wok_fried_mi:{
+      name: "Собери сам ВОК: жареная лапша", id:"custom_wok_mi",      key:"build_wok_mi",      name_ru:"Собери сам ВОК: жареная лапша",image: "images/build_wok_mi.png" },
+      rice_braised:{
+      name: "Собери сам Рис: тушёные", id:"custom_rice_braised",key:"build_rice_braised",name_ru:"Собери сам Рис: тушёные",      image: "images/build_rice_braised.png" },
+      fried_rice:  {
+      name: "Собери сам Рис: жареный", id:"custom_fried_rice",  key:"build_fried_rice",  name_ru:"Собери сам Рис: жареный",      image: "images/build_fried_rice.png" },
+      appetizers:  {
+      name: "Собери сам spring roll", id:"custom_spring_roll", key:"build_spring_roll", name_ru:"Собери сам spring roll",       image: "images/build_spring_roll.png",
+      price: 120, base_override:"Spring roll" }
     };
 
     const meta = META[catKey] || { id:`custom_${catKey}`, key:`custom_${catKey}`, name_ru:"Собери сам", image:"images/build/build_custom.png" };
@@ -1528,7 +1542,7 @@ const menuData = {
       key: meta.key,
       name: meta.name_ru,
       image: meta.image,
-      price: 0,
+      price: (meta.price ?? 120),
       weight: 0,
       spicy: 0,
       tags: ["custom","featured"],
